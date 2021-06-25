@@ -1,0 +1,36 @@
+{
+  "name": "spmma",
+  "version": "1.0.0",
+  "description": "sistem pentru monitorizarea mediului ambiant",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PascalDragosCostin/spmma.git"
+  },
+  "keywords": [
+    "air",
+    "quality"
+  ],
+  "author": "Pascal Dragos-Costin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PascalDragosCostin/spmma/issues"
+  },
+  "homepage": "https://github.com/PascalDragosCostin/spmma#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chart.js": "^3.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "gaugeJS": "^1.3.7",
+    "session": "^0.1.0",
+    "sqlite3": "^5.0.2",
+    "sync": "^0.2.5",
+    "sync-rpc": "^1.3.6"
+  }
+}

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <title>SPMMA</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/canvas.css">
+
+</head>
+
+<body>
+  <div id="master" class="container-fluid">
+
+    <header class="row">
+      <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+        <div class="title"><img src=favicon.ico height="22px" alt="logo">&nbsp;&nbsp;
+           Sistem pentru monitorizarea mediului ambiant</div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="row">
+        <div class="col-sm-1 text-center"><a href="/about">Despre</a> </div> <!-- Informatii despre licenta-->
+        
+        <div class="col-sm-2 text-center"><a href="/comfort">Confort</a> </div>  <!-- Confort -->
+        <div class="col-sm-2 text-center"><a href="/temperature">Temperatura</a> </div>  <!-- T-->
+        <div class="col-sm-2 text-center"><a href="/humidity">Umiditate</a> </div>  <!-- H -->
+
+        <div class="col-sm-2 text-center"><a href="/gas">Gaze</a> </div> <!-- OX, RED, NH3-->
+        <div class="col-sm-2 text-center"><a href="/light">Lumina</a> </div> <!-- Light-->
+        <div class="col-sm-1 text-center"><a href="/noise">Zgomot</a> </div> <!-- Mic -->
+
+      </div>
+    </nav>
+
+    <main class="main">
+      <%- body -%>
+    </main>
+
+    <footer class="jos">
+      &copy; 2021, Pascal Dragos-Costin
+    </footer>
+  </div> <!--  master   -->
+</body>
+
+</html>

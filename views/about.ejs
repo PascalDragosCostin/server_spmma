@@ -1,0 +1,128 @@
+<fieldset class="field">
+    <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+        <div class="title">Despre aplicație</div>
+    </div>
+    <hr />
+    <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+        <div class="title">Rezumat</div>
+    </div>
+    <br>
+    <p>Sistemul proiectat, implementat și testat în prezenta lucrarea de licență abordează tema condițiilor de mediu în
+        care oamenii își desfășoară activitățile precum munca, relaxarea și dormitul. Aplicația este compusă din două
+        elemente distincte din punct de vedere logic și structural.</p>
+    <p>Prima componentă este alcătuită din placa de dezvoltare Raspberry Pi Zero W, placa de extensie Pimoroni Enviro+
+        și un senzor de temperatura suplimentar necesar pentru acuratețea informațiilor numit TMP36. Enviro+ conține un
+        cumul de senzori (temperatura, umiditate, presiune, luminanță, proximitate, gaze oxidante, reducătoare și
+        amoniu), un convertor analog numeric, un micron și un ecran IPS (pe care sunt afișate grafice în timp real cu
+        evoluția mărimilor de interes). Toate acestea sunt integrate într-un PCB de dimensiuni reduse. Pe Raspberry Pi
+        Zero W rulează mai multe procese Python 3 care coordonează: achiziția datelor comunicând prin interfețe seriale
+        cu senzorii anterior menționați, transmiterea datelor la un server HTTP printr-un API de tip REST, afișarea unor
+        grafice în timp real pe ecran cu evoluția mărimilor de interes. </p>
+    <p>Dacă prima componentă presupune software și hardware interdependent, cea de-a doua este reprezentată de un
+        software ce poate rula pe diverse computere cu sistem de operare precum un laptop, un desktop, un sistem aflat
+        în cloud sau chiar același Raspberry Pi. Această a doua componentă este de fapt serverul HTTP menționat anterior
+        și expune un domeniu care conține căi dedicate pentru încărcarea datelor de la Raspberry Pi și căi prin care
+        livrează pagini Web utilizatorului. Aplicația este realizată în Node.js, un mediu de rulare pentru cod
+        server-side JavaScript. Datele sunt stocate într-o bază de date SQLite deoarece tabelele și interogările sunt
+        relativ simple. Partea statică a paginilor Web este scrisă cu ajutorul limbajelor de marcare, respectiv
+        stilizare HTML 5, respectiv CSS 3 cu framework-ul Bootstrap, iar partea dinamică este scrisă cu JavaScript
+        folosind Ajax, jQuerry și o bibliotecă pentru desant grafice numită ChartJS. </p>
+    <p>Utilizatorul poate vizualiza informațiile de mediu pe ecranul IPS cu posibilitatea de a derula prin diferite
+        grafice și valori curente, dar și prin accesarea cu ajutorul unui browser a paginilor Web unde poate urmări
+        grafice mai complexe și cu parametri de timp aleși de utilizator. Se remarcă avantajul de a accesa informațiile
+        colectate atât direct de pe sistemul de monitorizare, cât și la distanță cu o simplă conexiune la internet pe
+        telefon, laptop sau alt dispozitiv. </p>
+    <hr />
+
+    <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+        <div class="title">Fluxul de date</div>
+    </div>
+    <br>
+    <p>
+        Aplicația cuprinde trei elemente logice distincte. Primul element, cel aflat în partea stângă reprezintă
+        complexul de
+        senzori care pot detecta: temperatura, umiditatea, presiunea, cantitatea de lumină, sunetul, diverși compuși
+        chimici
+        gazoși și dispozitivul de ieșire reprezentat de ecranul IPS pe care vor fi afișate date. Din punct de vedere
+        fizic,
+        acesta reprezintă HAT-ul aflat pe Raspberry Pi împreună cu senzorul TMP36. Cel de-al doilea element, cel aflat
+        în partea
+        centrală reprezintă plăcuța Raspberry Pi care controlează achiziția datelor folosindu-se de interfețe seriale,
+        prelucrarea primară a acestora, afișarea unor informații pe ecranul IPS și încărcarea acestora prin HTTP pe
+        server. Cel
+        de-al treilea element, cel aflat în partea dreaptă a figurii, reprezintă serverul care pune la dispoziție un API
+        pentru
+        actualizarea datelor de la sistemul fizic și pune la dispoziție pagini Web accesibile dintr-un browser, prin
+        care
+        utilizatorul poate viziona statistici și grafice.
+    </p>
+    <br />
+    <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+        <figure>
+            <img src="./images/dataflow.png" width="100%" height="5%" alt="Dataflow">
+            <figcaption>Fluxul de date</figcaption>
+        </figure>
+    </div>
+
+    <hr />
+
+    <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+        <div class="title">Procesele Python pe Raspberry Pi</div>
+    </div>
+    <br>
+    <p>
+        În figura următoare se remarcă un proces central, cu rol de coordonare și patru procese care gestionează cele
+        patru interfețe
+        cu care se lucrează. Astfel, se realizează decuplarea entităților din cod, cele cinci procese fiind implementate
+        separat
+        și având posibilitatea actualizării independente. De asemenea, lizibilitatea codului crește prin dezvoltarea
+        codului în
+        fișiere separate. Aceasta abordare permite și toleranță la erori, fiecare componentă putând fi oprită în cazul
+        apariției unei erori și repornită ulterior.
+        Un aspect important al acestei structuri este reprezentat de considerentele de timp și energie. Pentru a
+        optimiza
+        consumul de energie, interfețele pot fi accesate cu frecvențe diferite în funcție de cerințele utilizatorului și
+        asincron raportat la procesul coordonator. Procesele care se ocupa cu achiziția de date, ca nu sunt condiționate
+        din
+        punct de vedere logic de celelalte componente, nu sunt condiționate nici la nivel de cod de procesele care se
+        ocupă cu
+        afișa datelor pe ecran sau de comunicația cu serverul. Acestea execută instrucțiunile necesare obținerii
+        mărimilor de
+        interes și pun rezultate în coadă, fără a se interesa de când și cum sunt acestea prelucrate.
+    </p> <br />
+    <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+        <figure>
+            <img src="./images/procese.png" width="100%" height="5%" alt="ProcesePython">
+            <figcaption>Procesele Python pe Raspberry Pi</figcaption>
+        </figure>
+    </div>
+
+    <hr />
+
+    <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+        <div class="title">Schema bazei de date</div>
+    </div>
+    <br>
+    <p>
+        Baza de date folosită este gestionată cu SQLite, deoarece cuprinde tabele relativ simple, fără relații între
+        ele. De asemenea, interogările bazei de date sunt ușoare din punct de vedere computațional.
+        În figura următoare se pot observa tabelele din baza de date, câmpurile acestora cu nume și tip de dată. Toate
+        tabelele au ca
+        primary key componenta timp a măsurătorilor deoarece nu se pot realiza două măsurători în același moment de
+        timp. De
+        asemenea, database management system creează implicit indecși pentru acest câmp. Acest aspect este util deoarece
+        majoritatea interogărilor asupra unei tabele se realizează după componenta de timp.
+    </p> <br />
+    <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
+        <figure>
+            <img src="./images/database.png" width="100%" height="500" alt="database">
+            <figcaption>Schema bazei de date</figcaption>
+        </figure>
+    </div>
+
+    <hr />
+
+</fieldset>
+
+<br>
+<br>
