@@ -1,0 +1,27 @@
+2021-06-26 15:30:45.071 INFO  Connected to database. 
+2021-06-26 15:30:49.707 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-27"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-26 15:30:49.718 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-27"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-26 15:30:49.726 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-27"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-26 15:30:49.738 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-27"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-26 15:30:50.974 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-26"
+                                AND time < "2021-06-27" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 

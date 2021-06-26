@@ -4,20 +4,20 @@ date = new Date(date.getTime() - userTimezoneOffset);
 var condition = `time <= "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${(date.getUTCDate()+1).pad(2)}"`
 
 
-module.exports = function (app, db) {
+module.exports = function (app, db, databaseLogger) {
     // Temperatura, umiditate, ITU
     try {
         app.get('/db_gauge_weather', (req, res) => {
             let sql = `SELECT tmp36 as temperature, humidity
-            FROM Weather
-            WHERE ${condition}
-            ORDER BY time
-            DESC LIMIT 1;`;
-            console.log(sql);
+                                FROM Weather
+                                WHERE ${condition}
+                                ORDER BY time
+                                DESC LIMIT 1;`;
+            databaseLogger.info(sql);
 
             db.all(sql, [], (err, rows) => {
                 if (err) {
-                    console.log(err.message);
+                    databaseLogger.error(err.message);
                     res.status(403).send("Error: SQLite Error");
                 }
 
@@ -27,7 +27,7 @@ module.exports = function (app, db) {
         });
     }
     catch (err) {
-        console.log(err.message);
+        databaseLogger.error(err.message);
         res.satusCode = 500;
         res.send("Error: Internal Server Error");
     }
@@ -37,15 +37,15 @@ module.exports = function (app, db) {
     try {
         app.get('/db_gauge_noise', (req, res) => {
             let sql = `SELECT db as noise
-                    FROM Sound
-                    WHERE ${condition}
-                    ORDER BY time
-                    DESC LIMIT 1;`;
-            console.log(sql);
+                                FROM Sound
+                                WHERE ${condition}
+                                ORDER BY time
+                                DESC LIMIT 1;`;
+            databaseLogger.info(sql);
 
             db.all(sql, [], (err, rows) => {
                 if (err) {
-                    console.log(err.message);
+                    databaseLogger.error(err.message);
                     res.status(403).send("Error: SQLite Error");
                 }
 
@@ -55,7 +55,7 @@ module.exports = function (app, db) {
         });
     }
     catch (err) {
-        console.log(err.message);
+        databaseLogger.error(err.message);
         res.satusCode = 500;
         res.send("Error: Internal Server Error");
     }
@@ -65,15 +65,15 @@ module.exports = function (app, db) {
     try {
         app.get('/db_gauge_gas', (req, res) => {
             let sql = `SELECT ox, red, nh3
-                    FROM Gas
-                    WHERE ${condition}
-                    ORDER BY time
-                    DESC LIMIT 1;`;
-            console.log(sql);
+                                FROM Gas
+                                WHERE ${condition}
+                                ORDER BY time
+                                DESC LIMIT 1;`;
+            databaseLogger.info(sql);
 
             db.all(sql, [], (err, rows) => {
                 if (err) {
-                    console.log(err.message);
+                    databaseLogger.error(err.message);
                     res.status(403).send("Error: SQLite Error");
                 }
 
@@ -83,7 +83,7 @@ module.exports = function (app, db) {
         });
     }
     catch (err) {
-        console.log(err.message);
+        databaseLogger.error(err.message);
         res.satusCode = 500;
         res.send("Error: Internal Server Error");
     }
@@ -93,15 +93,15 @@ module.exports = function (app, db) {
     try {
         app.get('/db_gauge_light', (req, res) => {
             let sql = `SELECT light
-            FROM Light
-            WHERE ${condition}
-            ORDER BY time
-            DESC LIMIT 1;`;
-            console.log(sql);
+                                FROM Light
+                                WHERE ${condition}
+                                ORDER BY time
+                                DESC LIMIT 1;`;
+            databaseLogger.info(sql);
 
             db.all(sql, [], (err, rows) => {
                 if (err) {
-                    console.log(err.message);
+                    databaseLogger.error(err.message);
                     res.status(403).send("Error: SQLite Error");
                 }
 
@@ -111,7 +111,7 @@ module.exports = function (app, db) {
         });
     }
     catch (err) {
-        console.log(err.message);
+        databaseLogger.error(err.message);
         res.satusCode = 500;
         res.send("Error: Internal Server Error");
     }

@@ -1,0 +1,7 @@
+2021-06-26T12:30:49.022Z GET, "/comfort", status=304, response-time=27.292 ms
+2021-06-26T12:30:49.722Z GET, "/db_gauge_weather", status=304, response-time=15.763 ms
+2021-06-26T12:30:49.724Z GET, "/db_gauge_noise", status=304, response-time=7.745 ms
+2021-06-26T12:30:49.732Z GET, "/db_gauge_gas", status=304, response-time=5.354 ms
+2021-06-26T12:30:49.740Z GET, "/db_gauge_light", status=304, response-time=2.302 ms
+2021-06-26T12:30:50.667Z GET, "/temperature", status=304, response-time=3.497 ms
+2021-06-26T12:30:50.976Z GET, "/db_temperature?period=Day", status=304, response-time=2.300 ms

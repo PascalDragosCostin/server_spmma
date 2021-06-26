@@ -1,6 +1,6 @@
 /* Actualizarea datelor de pe server. Eventual cu parola de la server */
 
-module.exports = function (app, db) {
+module.exports = function (app, db, databaseLogger) {
     /*
     {
         "date": "2021-04-01 10:20:05.123",
@@ -15,10 +15,10 @@ module.exports = function (app, db) {
             // Evit SQL Injection
             let cmd = `INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?);`;
             let args = [req.body.date, req.body.temperature, req.body.humidity, req.body.pressure, req.body.tmp36];
-            console.log(args);
+            databaseLogger.info(cmd + " " + args);
             db.run(cmd, args, function (err) {
                 if (err) {
-                    console.log(err.message);
+                    databaseLogger.error(err.message);
                     res.status(403).send("Error: SQLite Error");
                 }
                 else {
@@ -28,7 +28,7 @@ module.exports = function (app, db) {
             });
         }
         catch (err) {
-            console.log(err.message);
+            databaseLogger.error(err.message);
             res.satusCode = 500;
             res.send("Error: Internal Server Error");
         }
@@ -40,10 +40,10 @@ module.exports = function (app, db) {
             // Evit SQL Injection
             let cmd = `INSERT INTO LIGHT VALUES(?, ?, ?);`;
             let args = [req.body.date, req.body.light, req.body.proximity];
-            console.log(args);
+            databaseLogger.info(cmd + " " + args);
             db.run(cmd, args, function (err) {
                 if (err) {
-                    console.log(err.message);
+                    databaseLogger.error(err.message);
                     res.status(403).send("Error: SQLite Error");
                 }
                 else {
@@ -53,7 +53,7 @@ module.exports = function (app, db) {
             });
         }
         catch (err) {
-            console.log(err.message);
+            databaseLogger.error(err.message);
             res.satusCode = 500;
             res.send("Error: Internal Server Error");
         }
@@ -61,7 +61,7 @@ module.exports = function (app, db) {
 
 
     app.post('/sound', (req, res) => {
-        console.log(req.body);
+        databaseLogger.info(req.body);
     });
 
 
@@ -70,10 +70,10 @@ module.exports = function (app, db) {
             // Evit SQL Injection
             let cmd = `INSERT INTO GAS VALUES(?, ?, ?, ?);`;
             let args = [req.body.date, req.body.ox, req.body.red, req.body.nh3];
-            console.log(args);
+            databaseLogger.info(cmd + " " + args);
             db.run(cmd, args, function (err) {
                 if (err) {
-                    console.log(err.message);
+                    databaseLogger.error(err.message);
                     res.status(403).send("Error: SQLite Error");
                 }
                 else {
@@ -83,7 +83,7 @@ module.exports = function (app, db) {
             });
         }
         catch (err) {
-            console.log(err.message);
+            databaseLogger.error(err.message);
             res.satusCode = 500;
             res.send("Error: Internal Server Error");
         }
@@ -95,10 +95,10 @@ module.exports = function (app, db) {
             // Evit SQL Injection
             let cmd = `INSERT INTO ERROR VALUES(?, ?);`;
             let args = [req.body.date, req.body.id];
-            console.log(args);
+            databaseLogger.info(cmd + " " + args);
             db.run(cmd, args, function (err) {
                 if (err) {
-                    console.log(err.message);
+                    databaseLogger.error(err.message);
                     res.status(403).send("Error: SQLite Error");
                 }
                 else {
@@ -108,7 +108,7 @@ module.exports = function (app, db) {
             });
         }
         catch (err) {
-            console.log(err.message);
+            databaseLogger.error(err.message);
             res.satusCode = 500;
             res.send("Error: Internal Server Error");
         }
