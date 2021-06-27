@@ -1,6 +1,14 @@
 /* Actualizarea datelor de pe server. Eventual cu parola de la server */
+const TEMPERATURE_MIN = 17
+const TEMPERATURE_MAX = 27
+const HUMIDITY_MIN = 18
+const HUMIDITY_MAX = 70
+const OX_MAX = 100_000
+const RED_MAX = 100_000
+const NH3_MAX = 100_000
 
-module.exports = function (app, db, databaseLogger) {
+
+module.exports = function (app, db, databaseLogger, transporter, mailOptions) {
     /*
     {
         "date": "2021-04-01 10:20:05.123",
@@ -12,9 +20,39 @@ module.exports = function (app, db, databaseLogger) {
     */
     app.post('/weather', (req, res) => {
         try {
+            let temp = req.body.tmp36;
+            let hum = req.body.humidity;
+            let date = req.body.date;
+            let message = date + "\n";
+            let subject = "Alerta"
+            let flag_mail = false;
+            if(temp < TEMPERATURE_MIN || temp > TEMPERATURE_MAX)
+            {
+                flag_mail = true;
+                subject += " temperatura"
+                message = `Temperatura este în afara intervalului stabilit:\nTemperatura este ${temp} °C.\n`
+            }
+            if(hum < HUMIDITY_MIN || hum > HUMIDITY_MAX)
+            {
+                subject += " umiditate"
+                flag_mail = true;
+                message += `Umiditatea este în afara intervalului stabilit:\nUmiditatea este ${hum} %.\n`
+            }
+
+            if(flag_mail)
+            {
+                mailOptions["subject"] = subject;
+                mailOptions["text"] = message;
+                transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                        databaseLogger.error(error);
+                    }
+                  });
+            }
+
             // Evit SQL Injection
             let cmd = `INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?);`;
-            let args = [req.body.date, req.body.temperature, req.body.humidity, req.body.pressure, req.body.tmp36];
+            let args = [date, req.body.temperature, hum, req.body.pressure, temp];
             databaseLogger.info(cmd + " " + args);
             db.run(cmd, args, function (err) {
                 if (err) {
@@ -61,15 +99,71 @@ module.exports = function (app, db, databaseLogger) {
 
 
     app.post('/sound', (req, res) => {
-        databaseLogger.info(req.body);
+        try {
+            // Evit SQL Injection
+            let cmd = `INSERT INTO sound VALUES(?, ?, ?);`;
+            let args = [req.body.date, req.body.db, req.body.freq];
+            databaseLogger.info(cmd + " " + args);
+            db.run(cmd, args, function (err) {
+                if (err) {
+                    databaseLogger.error(err.message);
+                    res.status(403).send("Error: SQLite Error");
+                }
+                else {
+                    res.statusCode = 201;
+                    res.send("Created");
+                }
+            });
+        }
+        catch (err) {
+            databaseLogger.error(err.message);
+            res.satusCode = 500;
+            res.send("Error: Internal Server Error");
+        }
+
     });
 
 
     app.post('/gas', (req, res) => {
         try {
+            let date = req.body.date;
+            let ox = req.body.ox;
+            let red = req.body.red;
+            let nh3 = req.body.nh3;
+
+            let message = date + "\n";
+            let subject = "Alerta gaz"
+            let flag_mail = false;
+            if(ox > OX_MAX)
+            {
+                flag_mail = true;
+                message += `Valoarea pentru gazele oxidante este în afara intervalului stabilit:\nValoarea este ${ox}.\n`
+            }
+            if(red > RED_MAX)
+            {
+                flag_mail = true;
+                message += `Valoarea pentru gazele reducatoare este în afara intervalului stabilit:\nValoarea este ${red}.\n`
+            }
+            if(nh3 > NH3_MAX)
+            {
+                flag_mail = true;
+                message += `Valoarea pentru gazele din categoria amoniacului este în afara intervalului stabilit:\nValoarea este ${nh3}.\n`
+            }
+
+            if(flag_mail)
+            {
+                mailOptions["subject"] = subject;
+                mailOptions["text"] = message;
+                transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                        databaseLogger.error(error);
+                    }
+                  });
+            }
+
             // Evit SQL Injection
             let cmd = `INSERT INTO GAS VALUES(?, ?, ?, ?);`;
-            let args = [req.body.date, req.body.ox, req.body.red, req.body.nh3];
+            let args = [date, ox, red, nh3];
             databaseLogger.info(cmd + " " + args);
             db.run(cmd, args, function (err) {
                 if (err) {

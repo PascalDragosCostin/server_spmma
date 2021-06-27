@@ -6,6 +6,7 @@ const fs = require("fs");
 const morgan = require('morgan');
 const path = require('path')
 const rfs = require('rotating-file-stream') 
+var nodemailer = require('nodemailer');
 
 const app = express();
 
@@ -72,17 +73,33 @@ let db = new sqlite3.Database('./db/spmma.db', (err) => {
 });
 
 
-// rutele de la rest.js, inainte de partea cu autorizarea cu parola
-var rest_routes = require('./rest.js')(app, db, databaseLogger);
-var database_routes = require('./database.js')(app, db, databaseLogger);
-var gauge_database_routes = require('./gauge_database.js')(app, db, databaseLogger);
-var site_routes = require('./site.js')(app);
-
-
 /* Citirea fisierului de configurari */
 var cfg = JSON.parse(fs.readFileSync("cfg.json"));
 const port = cfg.port;
 const authorizationCode = cfg.authorizationCode;
+
+
+/* Clientul de mail */
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'alert.spmma@gmail.com',
+      pass: 'JBXn3E2Z'
+    }
+  });
+  
+var mailOptions = {
+    from: 'alert.spmma@gmail.com',
+    to: `${cfg.userMail}`,
+    subject: 'Mail de la SPMMA',
+    text: 'Verifica aplicatia!'
+};
+
+// rutele de la rest.js, inainte de partea cu autorizarea cu parola
+var rest_routes = require('./rest.js')(app, db, databaseLogger, transporter, mailOptions);
+var database_routes = require('./database.js')(app, db, databaseLogger);
+var gauge_database_routes = require('./gauge_database.js')(app, db, databaseLogger);
+var site_routes = require('./site.js')(app);
 
 
 /* Autorizarea vizualizarii datelor */

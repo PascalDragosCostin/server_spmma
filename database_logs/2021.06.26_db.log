@@ -25,3 +25,53 @@
                                 AND time < "2021-06-27" AND val NOT NULL
                                 GROUP BY val
                                 ORDER BY time; 
+2021-06-26 16:11:15.072 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-27"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-26 16:11:15.079 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-27"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-26 16:11:15.085 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-27"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-26 16:11:15.105 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-27"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-26 16:11:16.425 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-26"
+                                AND time < "2021-06-27" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-26 16:11:17.300 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-26"
+                                AND time < "2021-06-27" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-26 16:11:18.576 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-26"
+                                AND time < "2021-06-27" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-26 16:11:19.234 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-26"
+                                AND time < "2021-06-27" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-26 16:11:19.890 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-26"
+                                AND time < "2021-06-27" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 

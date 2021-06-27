@@ -1,0 +1,503 @@
+2021-06-27 09:51:00.433 INFO  Connected to database. 
+2021-06-27 09:51:07.738 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 09:51:07.747 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 09:51:07.750 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 09:51:07.752 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 09:53:56.784 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 09:53:56.794 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 09:53:56.829 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 09:53:56.838 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 09:54:30.633 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:54:35.396 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 09:54:41.428 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:54:48.590 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:55:12.870 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:55:13.886 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:55:15.518 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 09:56:11.964 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:56:12.943 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 09:56:14.813 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:56:17.504 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:56:18.874 INFO  SELECT time, avg(db) as db, strftime('%m', time) as val
+                                FROM Sound 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:56:21.138 INFO  SELECT time, avg(db) as db, strftime('%Y%m', time) as val
+                                FROM Sound 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:56:25.038 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 09:56:26.970 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 10:13:12.907 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 10:13:12.915 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 10:13:12.967 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 10:13:12.972 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 10:17:02.460 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 10:17:04.366 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 13:22:07.315 INFO  Connected to database. 
+2021-06-27 13:24:41.401 INFO  Connected to database. 
+2021-06-27 13:30:12.064 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:30:11.40,31.52,52.81,1002.2432,26.9 
+2021-06-27 13:30:12.245 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:30:11.40,11851.0,435467.0,86737.0 
+2021-06-27 13:30:12.348 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:30:11.40,4.8,0 
+2021-06-27 13:30:16.291 INFO  {"date":"2021-06-27 13:30:15.73","db":"0.0","freq":"3329.0"} 
+2021-06-27 13:42:39.702 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:42:39.08,31.59,52.8,1002.2067,27.0 
+2021-06-27 13:42:39.866 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:42:39.08,12204.0,438139.0,87974.0 
+2021-06-27 13:42:39.977 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:42:39.08,0.22,0 
+2021-06-27 13:42:44.058 INFO  {"date":"2021-06-27 13:42:43.41","db":"0.0","freq":"3333.0"} 
+2021-06-27 13:43:36.965 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:43:36.35,31.46,52.72,1002.2236,27.0 
+2021-06-27 13:43:37.135 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:43:36.35,12191.0,438139.0,87634.0 
+2021-06-27 13:43:37.253 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:43:36.35,5.18,0 
+2021-06-27 13:43:41.226 INFO  {"date":"2021-06-27 13:43:40.68","db":"0.0","freq":"3330.0"} 
+2021-06-27 13:52:42.491 INFO  Connected to database. 
+2021-06-27 13:53:05.666 INFO  Connected to database. 
+2021-06-27 13:53:22.193 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:53:21.55,31.5,52.97,1002.1176,26.85 
+2021-06-27 13:53:22.369 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:53:21.55,12292.0,427622.0,86848.0 
+2021-06-27 13:53:22.457 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:53:21.55,5.24,0 
+2021-06-27 13:53:26.417 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 13:53:25.87,0.0,3333.0 
+2021-06-27 13:53:27.212 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:53:26.65,31.51,52.49,1002.1376,26.85 
+2021-06-27 13:53:27.320 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:53:26.65,12292.0,430209.0,86737.0 
+2021-06-27 13:53:27.421 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:53:26.65,5.19,0 
+2021-06-27 13:53:32.369 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:53:31.78,31.54,52.79,1002.1387,26.9 
+2021-06-27 13:53:32.509 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:53:31.78,12280.0,427622.0,86514.0 
+2021-06-27 13:53:32.632 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:53:31.78,5.17,3 
+2021-06-27 13:53:32.716 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 13:53:32.18,56.38,3368.0 
+2021-06-27 13:53:37.488 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:53:36.91,31.57,51.94,1002.1411,26.85 
+2021-06-27 13:53:37.622 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:53:36.91,12280.0,427622.0,86514.0 
+2021-06-27 13:53:37.730 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:53:36.91,5.17,3 
+2021-06-27 13:53:38.820 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 13:53:38.27,57.98,3369.0 
+2021-06-27 13:53:42.618 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:53:42.03,31.59,52.13,1002.1202,26.9 
+2021-06-27 13:53:42.745 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:53:42.03,12280.0,427622.0,86625.0 
+2021-06-27 13:53:42.849 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:53:42.03,5.16,0 
+2021-06-27 13:53:44.984 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 13:53:44.44,57.99,3371.0 
+2021-06-27 13:53:47.752 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:53:47.17,31.61,52.21,1002.1088,26.9 
+2021-06-27 13:53:47.889 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:53:47.17,12292.0,430209.0,86737.0 
+2021-06-27 13:53:47.998 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:53:47.17,5.15,0 
+2021-06-27 13:53:51.152 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 13:53:50.61,59.43,3374.0 
+2021-06-27 13:53:52.887 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:53:52.31,31.61,52.18,1002.1126,26.9 
+2021-06-27 13:53:53.024 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:53:52.31,12331.0,430209.0,87296.0 
+2021-06-27 13:53:53.115 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:53:52.31,5.18,0 
+2021-06-27 13:53:57.340 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 13:53:56.79,58.16,3372.0 
+2021-06-27 13:53:57.998 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 13:53:57.43,31.61,52.26,1002.1239,26.9 
+2021-06-27 13:53:58.110 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 13:53:57.43,12318.0,430209.0,87184.0 
+2021-06-27 13:53:58.210 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 13:53:57.43,5.21,0 
+2021-06-27 14:06:51.015 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:06:50.41,31.63,51.88,1002.0286,28.05 
+2021-06-27 14:06:51.190 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:06:50.41,12856.0,438139.0,89118.0 
+2021-06-27 14:06:51.314 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:06:50.41,5.39,0 
+2021-06-27 14:06:55.276 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 14:06:54.75,0.0,3324.0 
+2021-06-27 14:06:56.066 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:06:55.49,31.63,51.87,1002.0362,28.1 
+2021-06-27 14:06:56.174 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:06:55.49,12869.0,438139.0,89233.0 
+2021-06-27 14:06:56.274 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:06:55.49,5.34,0 
+2021-06-27 14:07:01.271 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:07:00.65,31.63,52.17,1002.035,28.15 
+2021-06-27 14:07:01.422 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:07:00.65,12882.0,438139.0,89233.0 
+2021-06-27 14:07:01.591 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:07:00.65,5.35,3 
+2021-06-27 14:07:01.688 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 14:07:01.15,57.49,3360.0 
+2021-06-27 14:07:06.357 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:07:05.78,31.62,52.05,1002.049,28.15 
+2021-06-27 14:07:06.490 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:07:05.78,12869.0,438139.0,89002.0 
+2021-06-27 14:07:06.586 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:07:05.78,5.32,0 
+2021-06-27 14:07:07.721 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 14:07:07.19,59.53,3363.0 
+2021-06-27 14:07:11.490 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:07:10.92,31.6,52.19,1002.0651,28.15 
+2021-06-27 14:07:11.616 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:07:10.92,12869.0,438139.0,88773.0 
+2021-06-27 14:07:11.709 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:07:10.92,2.3,1214 
+2021-06-27 14:08:43.749 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:08:43.16,31.75,51.59,1002.0546,27.15 
+2021-06-27 14:08:43.906 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:08:43.16,12921.0,438139.0,89118.0 
+2021-06-27 14:08:44.044 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:08:43.16,5.69,0 
+2021-06-27 14:08:48.026 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 14:08:47.49,0.0,3324.0 
+2021-06-27 14:08:48.827 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:08:48.24,31.75,51.75,1002.0821,27.15 
+2021-06-27 14:08:48.929 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:08:48.24,12921.0,438139.0,89118.0 
+2021-06-27 14:08:49.038 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:08:48.24,4.51,0 
+2021-06-27 14:08:53.957 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:08:53.38,31.75,51.72,1002.0917,27.15 
+2021-06-27 14:08:54.092 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:08:53.38,12908.0,438139.0,89118.0 
+2021-06-27 14:08:54.225 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:08:53.38,5.75,0 
+2021-06-27 14:08:54.317 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 14:08:53.78,56.94,3359.0 
+2021-06-27 14:08:59.092 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:08:58.52,31.73,51.79,1002.102,27.1 
+2021-06-27 14:08:59.217 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:08:58.52,12921.0,438139.0,89233.0 
+2021-06-27 14:08:59.305 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:08:58.52,5.78,0 
+2021-06-27 14:09:00.434 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 14:08:59.89,58.83,3363.0 
+2021-06-27 14:09:04.233 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:09:03.65,31.72,52.02,1002.1173,27.05 
+2021-06-27 14:09:04.353 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:09:03.65,12921.0,438139.0,89118.0 
+2021-06-27 14:09:04.449 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:09:03.65,5.77,0 
+2021-06-27 14:09:06.601 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 14:09:06.07,59.57,3364.0 
+2021-06-27 14:09:09.369 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:09:08.79,31.72,51.66,1002.1142,27.05 
+2021-06-27 14:09:09.498 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:09:08.79,12921.0,438139.0,89002.0 
+2021-06-27 14:09:09.601 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:09:08.79,5.77,0 
+2021-06-27 14:09:12.788 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 14:09:12.24,59.32,3365.0 
+2021-06-27 14:09:14.507 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 14:09:13.92,31.74,51.82,1002.1097,27.0 
+2021-06-27 14:09:14.631 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-27 14:09:13.92,12934.0,438139.0,89118.0 
+2021-06-27 14:09:14.721 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-27 14:09:13.92,5.76,0 
+2021-06-27 14:09:18.957 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-27 14:09:18.42,59.03,3366.0 
+2021-06-27 15:13:49.247 INFO  Connected to database. 
+2021-06-27 15:14:00.192 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 15:14:00.200 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 15:14:00.208 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 15:14:00.219 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 15:14:02.240 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:03.740 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 15:14:05.098 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:06.205 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:07.357 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:08.263 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 15:14:09.050 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:10.167 INFO  SELECT time, avg(humidity) as humidity, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:11.065 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:12.122 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 15:14:13.349 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:14.708 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:15.584 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:16.460 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 15:14:17.779 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:18.724 INFO  SELECT time, avg(light) as light, strftime('%Y%m', time) as val
+                            FROM Light 
+                            WHERE True AND val NOT NULL
+                            GROUP BY val
+                            ORDER BY time; 
+2021-06-27 15:14:19.654 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:20.534 INFO  SELECT time, avg(db) as db, strftime('%d', time) as valDay 
+                                FROM Sound
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 15:14:21.447 INFO  SELECT time, avg(db) as db, strftime('%m', time) as val
+                                FROM Sound 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 15:14:22.564 INFO  SELECT time, avg(db) as db, strftime('%Y%m', time) as val
+                                FROM Sound 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 19:22:12.594 INFO  Connected to database. 
+2021-06-27 19:22:15.056 INFO  Connected to database. 
+2021-06-27 19:22:17.555 INFO  Connected to database. 
+2021-06-27 19:22:25.570 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 19:22:25.578 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 19:22:25.584 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 19:22:25.589 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 19:22:40.143 INFO  Connected to database. 
+2021-06-27 19:23:37.389 INFO  Connected to database. 
+2021-06-27 19:23:53.996 INFO  Connected to database. 
+2021-06-27 19:24:57.608 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2023-02-01 10:20:05.123,26.7,95.5,120,24.5 
+2021-06-27 19:25:38.688 INFO  Connected to database. 
+2021-06-27 19:25:52.897 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2023-02-01 10:20:05.123,26.7,95.5,120,30.5 
+2021-06-27 19:25:52.909 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: Weather.time 
+2021-06-27 19:26:45.589 INFO  Connected to database. 
+2021-06-27 19:26:48.269 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2023-02-01 10:20:05.123,26.7,95.5,120,30.5 
+2021-06-27 19:26:48.287 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: Weather.time 
+2021-06-27 19:27:51.591 INFO  Connected to database. 
+2021-06-27 19:27:53.668 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2023-02-01 10:20:05.123,26.7,95.5,120,30.5 
+2021-06-27 19:27:53.686 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: Weather.time 
+2021-06-27 19:28:56.014 INFO  Connected to database. 
+2021-06-27 19:28:58.022 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2023-02-01 10:20:05.123,26.7,95.5,120,30.5 
+2021-06-27 19:28:58.032 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: Weather.time 
+2021-06-27 19:29:04.152 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2024-02-01 10:20:05.123,26.7,95.5,120,30.5 
+2021-06-27 19:29:39.055 INFO  Connected to database. 
+2021-06-27 19:29:43.446 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2024-02-01 10:20:05.123,26.7,95.5,120,30.5 
+2021-06-27 19:29:43.456 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: Weather.time 
+2021-06-27 19:30:47.188 INFO  Connected to database. 
+2021-06-27 19:31:35.313 INFO  Connected to database. 
+2021-06-27 19:32:05.059 INFO  Connected to database. 
+2021-06-27 19:32:13.698 INFO  Connected to database. 
+2021-06-27 19:32:38.630 INFO  Connected to database. 
+2021-06-27 19:32:47.922 INFO  Connected to database. 
+2021-06-27 19:32:56.944 INFO  Connected to database. 
+2021-06-27 19:33:14.394 INFO  Connected to database. 
+2021-06-27 19:33:54.615 INFO  Connected to database. 
+2021-06-27 19:34:00.348 INFO  Connected to database. 
+2021-06-27 19:34:23.340 INFO  Connected to database. 
+2021-06-27 19:34:50.528 INFO  Connected to database. 
+2021-06-27 19:35:01.835 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 19:35:53.423 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2010-02-01 10:20:05.123,,,, 
+2021-06-27 19:35:53.425 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.humidity 
+2021-06-27 19:36:10.214 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-02-01 10:20:05.123,,,, 
+2021-06-27 19:36:10.215 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.humidity 
+2021-06-27 19:37:09.088 ERROR data is not defined 
+2021-06-27 19:37:42.702 INFO  Connected to database. 
+2021-06-27 19:38:22.499 INFO  Connected to database. 
+2021-06-27 19:38:23.828 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-02-01 10:20:05.123,6,8,7 
+2021-06-27 19:38:45.639 ERROR temp is not defined 
+2021-06-27 19:39:20.988 INFO  Connected to database. 
+2021-06-27 19:39:21.718 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-02-01 10:20:05.123,600000,800000,700000 
+2021-06-27 19:39:21.724 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: gas.time 
+2021-06-27 19:39:54.624 INFO  Connected to database. 
+2021-06-27 19:40:09.557 INFO  Connected to database. 
+2021-06-27 19:40:14.877 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-02-01 10:20:05.123,600000,800000,700000 
+2021-06-27 19:40:14.884 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: gas.time 
+2021-06-27 19:41:31.153 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-02-01 10:20:05.123,6000000,8000000,7000000 
+2021-06-27 19:41:31.156 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: gas.time 
+2021-06-27 19:42:42.393 INFO  Connected to database. 
+2021-06-27 19:54:33.515 INFO  Connected to database. 
+2021-06-27 19:54:36.372 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 20:20:05.123,26.7,80.5,120,28.4 
+2021-06-27 19:57:55.572 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 20:10:05.123,26.7,80.5,120,28.4 
+2021-06-27 19:58:46.555 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 20:10:05.123,26.7,80.5,120,28.4 
+2021-06-27 19:58:46.558 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: Weather.time 
+2021-06-27 20:01:14.286 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 20:10:05.123,26.7,80.5,120,28.4 
+2021-06-27 20:01:14.287 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: Weather.time 
+2021-06-27 20:12:15.222 INFO  Connected to database. 
+2021-06-27 20:12:21.851 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 20:10:05.123,26.7,80.5,120,28.4 
+2021-06-27 20:12:21.872 ERROR SQLITE_CONSTRAINT: UNIQUE constraint failed: Weather.time 
+2021-06-27 20:14:55.270 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-27 20:14:56.611 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 20:14:59.107 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 20:15:00.571 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 20:15:00.582 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 20:15:00.604 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 20:15:00.617 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
