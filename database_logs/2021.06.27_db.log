@@ -501,3 +501,76 @@
                                 WHERE time <= "2021-06-28"
                                 ORDER BY time
                                 DESC LIMIT 1; 
+2021-06-27 21:35:19.517 INFO  Connected to database. 
+2021-06-27 21:35:25.597 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:25.603 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:25.615 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:25.618 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:37.036 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 21:35:37.773 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-27"
+                                AND time < "2021-06-28" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-27 21:35:38.398 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:38.403 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:38.413 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:38.421 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:49.236 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:49.252 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:49.265 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-27 21:35:49.273 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-28"
+                                ORDER BY time
+                                DESC LIMIT 1; 

@@ -52,8 +52,8 @@ function create_chart(xlabels, ytemps, period) {
             scales: {
                 yAxes: [{
                     ticks: {
-                        suggestedMin: `${min - 1}`,
-                        suggestedMax: `${max + 1}`,
+                        suggestedMin: 0,
+                        suggestedMax: 250,
                         fontColor: '#e4ffff',
                         callback: function (value, index, values) {
                             return value.toFixed(2) + " lux";

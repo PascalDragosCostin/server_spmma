@@ -1,1 +1,6 @@
-{"port":6789, "authorizationCode": "1234", "userMail": "pascaldragosc@gmail.com"}
+{
+    "port": 6789,
+    "userPassword": "1234",
+    "userMail": "pascaldragosc@gmail.com",
+    "restPassword": "f$BRyWcAkfb57<b"
+}

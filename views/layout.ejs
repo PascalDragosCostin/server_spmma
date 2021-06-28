@@ -19,21 +19,26 @@
     <header class="row">
       <div class="dcol-sm-12 col-xs-12 col-md-12 col-lg-12 text-center">
         <div class="title"><img src=favicon.ico height="22px" alt="logo">&nbsp;&nbsp;
-           Sistem pentru monitorizarea mediului ambiant</div>
+          Sistem pentru monitorizarea mediului ambiant</div>
       </div>
     </header>
 
     <nav>
       <div class="row">
-        <div class="col-sm-1 text-center"><a href="/about">Despre</a> </div> <!-- Informatii despre licenta-->
-        
-        <div class="col-sm-2 text-center"><a href="/comfort">Confort</a> </div>  <!-- Confort -->
-        <div class="col-sm-2 text-center"><a href="/temperature">Temperatura</a> </div>  <!-- T-->
-        <div class="col-sm-2 text-center"><a href="/humidity">Umiditate</a> </div>  <!-- H -->
-
-        <div class="col-sm-2 text-center"><a href="/gas">Gaze</a> </div> <!-- OX, RED, NH3-->
-        <div class="col-sm-2 text-center"><a href="/light">Lumina</a> </div> <!-- Light-->
-        <div class="col-sm-1 text-center"><a href="/noise">Zgomot</a> </div> <!-- Mic -->
+        <div class="col-sm-1 text-center">
+          <a <% if (page_name =='about' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %> href="/about">Despre</a> </div> <!-- Informatii despre licenta-->
+        <div class="col-sm-2 text-center">
+          <a <% if (page_name =='comfort' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/comfort">Confort</a> </div> <!-- Confort -->
+        <div class="col-sm-2 text-center">
+          <a <% if (page_name =='temperature' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/temperature">Temperatura</a> </div> <!-- T-->
+        <div class="col-sm-2 text-center">
+          <a <% if (page_name =='humidity' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/humidity">Umiditate</a> </div> <!-- H -->
+        <div class="col-sm-2 text-center">
+          <a <% if (page_name =='gas' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/gas">Gaze</a> </div> <!-- OX, RED, NH3-->
+        <div class="col-sm-2 text-center">
+          <a <% if (page_name =='light' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/light">Lumina</a> </div> <!-- Light-->
+        <div class="col-sm-1 text-center">
+          <a <% if (page_name =='noise' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/noise">Zgomot</a> </div> <!-- Mic -->
 
       </div>
     </nav>

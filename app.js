@@ -76,7 +76,8 @@ let db = new sqlite3.Database('./db/spmma.db', (err) => {
 /* Citirea fisierului de configurari */
 var cfg = JSON.parse(fs.readFileSync("cfg.json"));
 const port = cfg.port;
-const authorizationCode = cfg.authorizationCode;
+const authorizationCode = cfg.userPassword;
+const restPassword = cfg.restPassword
 
 
 /* Clientul de mail */
@@ -95,35 +96,47 @@ var mailOptions = {
     text: 'Verifica aplicatia!'
 };
 
+
+
+
+/* Autorizarea vizualizarii datelor */
+app.use(function (req, res, next) {
+    console.log(req.path);
+
+    // header pe care il au cererile care vin de la RPI
+    let pas = req.headers['pass'];
+    if (pas == restPassword) {     // undefined == "..." => false
+        next();
+    }
+    else {
+        res.locals.session = req.session;
+        console.log(req.path);
+        if (!req.session.isAuthorized) {
+            if (req.path == "/verify-code") {
+                if (req.body.code == authorizationCode) {
+                    req.session.isAuthorized = true;
+                    res.redirect("/")
+                }
+                else {
+                    res.render("authorize", { page_name: 'authorize' })
+                }
+            }
+            else {
+                res.render("authorize", { page_name: 'authorize' })
+            }
+        }
+        else {
+            next();
+        }
+    }
+});
+
+
 // rutele de la rest.js, inainte de partea cu autorizarea cu parola
 var rest_routes = require('./rest.js')(app, db, databaseLogger, transporter, mailOptions);
 var database_routes = require('./database.js')(app, db, databaseLogger);
 var gauge_database_routes = require('./gauge_database.js')(app, db, databaseLogger);
 var site_routes = require('./site.js')(app);
-
-
-/* Autorizarea vizualizarii datelor */
-app.use(function (req, res, next) {
-    res.locals.session = req.session;
-    console.log(req.path);
-    if (!session.isAuthorized) {
-        if (req.path == "/verify-code") {
-            if (req.body.code == authorizationCode) {
-                session.isAuthorized = true;
-                res.redirect("/")
-            }
-            else {
-                res.render("authorize", {})
-            }
-        }
-        else {
-            res.render("authorize", {})
-        }
-    }
-    else {
-        next();
-    }
-});
 
 
 

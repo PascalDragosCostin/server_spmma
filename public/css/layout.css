@@ -15,6 +15,8 @@ body {
 }
 
 nav {
+
+    vertical-align: middle;  
     background: #e4ffff;
     color: #182020;
     padding: 0.5vh 0vh;
@@ -36,10 +38,16 @@ nav a {
 nav a:hover {
     background: white;
     color: #2c0402;
-    font-weight: bolder;
+    font-weight: 900;
     padding: 1.3vh 1vh;
     border-radius: 2vh;
 }
+
+.nav-item-current{
+    color: #2c0402;
+    font-weight: 900;
+}
+
 
 .main {
     position: relative;
@@ -82,3 +90,4 @@ hr{
     padding-bottom: 0;
     padding-top: 0;
 }
+

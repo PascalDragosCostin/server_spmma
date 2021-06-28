@@ -1,0 +1,2980 @@
+2021-06-28 14:42:16.433 INFO  Connected to database. 
+2021-06-28 14:42:42.891 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:42:44.746 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:42:46.030 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:43:30.966 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:43:32.778 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:43:42.157 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:43:46.071 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:43:51.446 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:43:59.765 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:44:01.661 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:45:18.589 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:45:42.047 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:45:47.579 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:45:50.786 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:46:14.336 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:46:23.469 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:47:38.881 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:47:40.058 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:47:42.689 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:47:45.809 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:47:51.505 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:47:52.553 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:47:53.445 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:47:54.587 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:47:55.711 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:48:36.737 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:49:03.450 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:49:11.073 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:49:13.090 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:49:14.575 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:49:16.267 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:49:57.574 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:50:34.759 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:50:51.257 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:51:01.673 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:51:02.717 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:51:04.062 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:51:06.082 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:51:58.387 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:53:49.626 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:54:18.706 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:54:19.506 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:54:23.847 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:54:24.693 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:54:45.102 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:55:18.939 INFO  SELECT time, avg(humidity) as humidity, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:55:26.923 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:55:28.612 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:55:30.615 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:55:46.453 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:55:47.690 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:55:49.335 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:55:51.039 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:56:00.047 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:00.049 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:00.067 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:00.079 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:12.349 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:12.353 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:12.366 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:12.369 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:22.481 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:22.488 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:22.502 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:22.508 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:38.663 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:38.677 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:38.688 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:38.701 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:54.250 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:54.254 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:54.275 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:54.277 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:56.968 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:56.972 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:56.987 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:56.993 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:59.056 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:59.064 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:59.079 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:56:59.084 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:03.233 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:03.240 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:03.255 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:03.259 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:04.563 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:05.760 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:06.961 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:12.680 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:13.536 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:21.512 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:22.740 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:57:24.472 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:25.400 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:36.033 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:37.077 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:39.748 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:57:40.767 INFO  SELECT time, avg(db) as db, strftime('%d', time) as valDay 
+                                FROM Sound
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:57:43.272 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:43.275 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:43.292 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:43.296 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:48.979 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:48.984 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:49.002 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:57:49.006 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:58:27.777 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:58:29.052 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:58:29.063 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:58:29.073 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:58:29.083 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:58:31.376 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:58:33.183 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:58:34.752 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:58:36.399 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:58:39.014 INFO  SELECT time, avg(humidity) as humidity, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:58:45.581 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:58:46.852 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:58:50.148 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:58:51.696 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:58:52.858 INFO  SELECT time, avg(light) as light, strftime('%Y%m', time) as val
+                            FROM Light 
+                            WHERE True AND val NOT NULL
+                            GROUP BY val
+                            ORDER BY time; 
+2021-06-28 14:58:55.685 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:58:55.689 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:58:55.710 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:58:55.714 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 14:59:11.294 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:59:12.542 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:59:16.771 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:59:18.750 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:59:20.736 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:59:22.499 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:59:24.540 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:59:25.181 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 14:59:37.788 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:59:53.953 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 14:59:59.922 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:00:09.786 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:00:09.792 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:00:09.809 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:00:09.811 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:00:43.424 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:00:43.437 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:00:43.449 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:00:43.455 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:00:51.102 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:00:53.444 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 15:00:54.520 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:00:58.453 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 15:01:03.199 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:01:05.085 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:01:06.530 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:01:22.518 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:01:22.524 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:01:22.541 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:01:22.546 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:01:51.446 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:04:08.507 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:04:12.939 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 15:04:15.318 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:04:17.539 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:04:19.613 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:05:05.723 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:05:08.671 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 15:05:10.938 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:05:12.514 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:12:51.399 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:12:51.405 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:12:51.421 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:12:51.425 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:12:52.720 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:12:55.350 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:12:57.527 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:13:38.861 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 15:13:51.931 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:13:53.537 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:23:59.993 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:24:02.117 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 15:24:05.951 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:24:07.457 INFO  SELECT time, avg(humidity) as humidity, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:24:08.908 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:24:11.746 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 15:35:45.028 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:35:45.032 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:35:45.049 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:35:45.055 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:36:03.558 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:36:03.565 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:36:03.583 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:36:03.592 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:48:12.261 INFO  Connected to database. 
+2021-06-28 15:49:43.486 INFO  Connected to database. 
+2021-06-28 15:50:35.606 INFO  Connected to database. 
+2021-06-28 15:56:06.542 INFO  Connected to database. 
+2021-06-28 15:56:29.601 INFO  Connected to database. 
+2021-06-28 15:56:32.096 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:56:32.104 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:56:32.116 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:56:32.122 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:56:33.613 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:56:34.998 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:56:36.058 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:56:37.211 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:56:43.495 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:56:45.090 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:56:46.141 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:56:51.196 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:57:48.075 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:57:48.081 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:57:48.101 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:57:48.104 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:57:49.228 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:57:50.684 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:57:52.782 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:57:58.544 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:57:58.547 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:57:58.560 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:57:58.565 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:58:06.104 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:58:06.116 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:58:06.130 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:58:06.140 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:58:08.782 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:58:08.791 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:58:08.810 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:58:08.817 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:58:09.913 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:58:11.138 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:58:12.123 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:58:13.452 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:59:18.760 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:59:21.581 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:59:23.022 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:59:24.952 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:59:26.357 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 15:59:28.105 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:59:28.115 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:59:28.130 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:59:28.136 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:59:59.593 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:59:59.597 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:59:59.613 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 15:59:59.618 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:03.785 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:03.794 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:03.805 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:03.813 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:20.980 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:20.982 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:20.995 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:21.002 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:27.219 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:27.229 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:27.244 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:27.248 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:33.560 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:33.566 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:33.582 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:00:33.591 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:01:15.625 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:01:15.627 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:01:15.644 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:01:15.649 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:01:21.323 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:01:21.330 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:01:21.344 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:01:21.358 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:01:25.238 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:01:26.752 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:01:28.689 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:01:30.496 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:01:32.574 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:02:04.421 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:02:15.021 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:02:21.157 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:02:37.128 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:02:50.661 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:02:55.271 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:03:13.855 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:03:17.466 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:03:22.427 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:04:29.595 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:04:53.457 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:05:05.040 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:05:06.448 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:05:14.394 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:06:12.694 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:06:12.704 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:06:12.720 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:06:12.727 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:06:50.334 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:06:50.344 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:06:50.355 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:06:50.362 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:04.439 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:04.443 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:04.457 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:04.463 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:15.701 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:15.704 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:15.721 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:15.729 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:16.550 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:07:17.863 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:17.865 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:17.885 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:07:17.888 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:08:12.801 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:08:14.145 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:08:14.156 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:08:14.169 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:08:14.181 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:11.705 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:11.713 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:11.729 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:11.734 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:21.409 INFO  Connected to database. 
+2021-06-28 16:09:21.817 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:21.825 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:21.844 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:21.849 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:26.034 INFO  Connected to database. 
+2021-06-28 16:09:27.112 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:27.119 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:27.134 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:27.160 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:32.699 INFO  Connected to database. 
+2021-06-28 16:09:33.016 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:33.021 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:33.035 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:09:33.049 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:13:40.034 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:13:41.598 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:17:03.955 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:17:03.957 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:17:03.959 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:17:03.973 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:17:04.574 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:17:05.720 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:17:06.970 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:17:08.745 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:17:10.066 INFO  SELECT time, avg(humidity) as humidity, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:21:38.944 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:21:40.928 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:21:42.675 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:21:49.861 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:22:47.866 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:22:49.522 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:22:53.940 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:22:55.052 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:22:56.453 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:23:01.849 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:23:02.788 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:24:30.411 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:24:32.063 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:24:38.645 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:24:40.233 INFO  SELECT time, avg(db) as db, strftime('%d', time) as valDay 
+                                FROM Sound
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:24:41.462 INFO  SELECT time, avg(db) as db, strftime('%m', time) as val
+                                FROM Sound 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:24:51.392 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:24:53.632 INFO  SELECT time, avg(light) as light, strftime('%Y%m', time) as val
+                            FROM Light 
+                            WHERE True AND val NOT NULL
+                            GROUP BY val
+                            ORDER BY time; 
+2021-06-28 16:24:54.868 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:24:55.708 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:25:45.472 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:25:46.407 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:25:48.693 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:25:50.387 INFO  SELECT time, avg(light) as light, strftime('%Y%m', time) as val
+                            FROM Light 
+                            WHERE True AND val NOT NULL
+                            GROUP BY val
+                            ORDER BY time; 
+2021-06-28 16:28:18.198 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:28:19.672 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:28:20.685 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:28:21.828 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:28:22.875 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:28:24.029 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:28:25.123 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:28:26.414 INFO  SELECT time, avg(humidity) as humidity, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:28:28.544 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:28:29.544 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:28:30.480 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:30:36.536 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:30:37.405 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:30:42.099 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:30:42.992 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:30:44.128 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:30:45.313 INFO  SELECT time, avg(light) as light, strftime('%Y%m', time) as val
+                            FROM Light 
+                            WHERE True AND val NOT NULL
+                            GROUP BY val
+                            ORDER BY time; 
+2021-06-28 16:31:18.019 INFO  Connected to database. 
+2021-06-28 16:31:21.470 INFO  Connected to database. 
+2021-06-28 16:31:23.486 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:31:24.536 INFO  SELECT time, avg(light) as light, strftime('%Y%m', time) as val
+                            FROM Light 
+                            WHERE True AND val NOT NULL
+                            GROUP BY val
+                            ORDER BY time; 
+2021-06-28 16:35:54.497 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:35:56.028 INFO  SELECT time, avg(db) as db, strftime('%d', time) as valDay 
+                                FROM Sound
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:35:57.397 INFO  SELECT time, avg(db) as db, strftime('%m', time) as val
+                                FROM Sound 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:37:19.739 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:37:19.746 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:37:19.760 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:37:19.770 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 16:37:21.142 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:42:25.102 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:42:25.842 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:42:27.104 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:42:28.216 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:42:29.161 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:42:34.128 INFO  SELECT time, avg(light) as light, strftime('%Y%m', time) as val
+                            FROM Light 
+                            WHERE True AND val NOT NULL
+                            GROUP BY val
+                            ORDER BY time; 
+2021-06-28 16:42:38.106 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:42:39.053 INFO  SELECT time, avg(db) as db, strftime('%d', time) as valDay 
+                                FROM Sound
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:42:40.136 INFO  SELECT time, avg(db) as db, strftime('%m', time) as val
+                                FROM Sound 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:42:41.284 INFO  SELECT time, avg(db) as db, strftime('%Y%m', time) as val
+                                FROM Sound 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:43:38.864 INFO  Connected to database. 
+2021-06-28 16:43:44.556 INFO  Connected to database. 
+2021-06-28 16:43:45.986 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:43:47.322 INFO  SELECT time, avg(db) as db, strftime('%m', time) as val
+                                FROM Sound 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:43:48.457 INFO  SELECT time, avg(db) as db, strftime('%Y%m', time) as val
+                                FROM Sound 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:44:11.126 INFO  SELECT time, avg(db) as db, strftime('%m', time) as val
+                                FROM Sound 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:44:12.604 INFO  SELECT time, avg(db) as db, strftime('%d', time) as valDay 
+                                FROM Sound
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 16:44:13.836 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 16:44:16.430 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:01:42.090 INFO  Connected to database. 
+2021-06-28 17:01:48.932 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:01:48.941 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:01:48.945 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:01:48.958 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:01:56.009 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:01:58.360 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06" AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 17:01:59.815 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:01.439 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:04.184 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:05.505 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 17:02:07.413 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:08.490 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:11.498 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:12.640 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:13.913 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:14.845 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:15.911 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 17:02:17.836 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:18.771 INFO  SELECT time, avg(db) as db, strftime('%d', time) as valDay 
+                                FROM Sound
+                                WHERE time >= "2021-06"
+                                AND time < "2021-07" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-06-28 17:02:20.134 INFO  SELECT time, avg(db) as db, strftime('%m', time) as val
+                                FROM Sound 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:46.614 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:47.758 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:02:50.483 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:03:06.165 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021" AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:03:08.028 INFO  SELECT time, avg(light) as light, strftime('%Y%m', time) as val
+                            FROM Light 
+                            WHERE True AND val NOT NULL
+                            GROUP BY val
+                            ORDER BY time; 
+2021-06-28 17:03:15.728 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 17:03:33.228 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:03:33.234 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:03:33.264 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:03:33.273 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:04:03.401 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:04:03.432 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:04:03.434 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 17:04:03.450 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:48:17.243 INFO  Connected to database. 
+2021-06-28 18:49:17.515 INFO  Connected to database. 
+2021-06-28 18:49:21.402 INFO  Connected to database. 
+2021-06-28 18:49:24.635 INFO  Connected to database. 
+2021-06-28 18:49:28.188 INFO  Connected to database. 
+2021-06-28 18:50:25.148 INFO  Connected to database. 
+2021-06-28 18:50:52.307 INFO  Connected to database. 
+2021-06-28 18:50:58.577 INFO  Connected to database. 
+2021-06-28 18:52:16.578 INFO  Connected to database. 
+2021-06-28 18:52:24.965 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:52:24.977 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:52:24.980 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:52:24.984 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:52:25.918 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:52:26.893 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:52:30.972 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:52:30.976 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:52:30.991 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:52:31.009 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:52:31.673 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:52:32.291 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:52:32.818 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:52:33.501 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:52:34.102 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:56:30.278 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 18:56:29.55,27.76,61.31,1004.0713,26.4 
+2021-06-28 18:56:30.449 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 18:56:29.55,5025.0,621.0,299.0 
+2021-06-28 18:56:30.541 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 18:56:29.55,3.48,0 
+2021-06-28 18:56:34.488 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-28 18:56:33.86,0.0,3228.0 
+2021-06-28 18:56:35.296 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 18:56:34.64,27.77,60.94,1004.0778,26.4 
+2021-06-28 18:56:35.417 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 18:56:34.64,687.0,140946.0,2384.0 
+2021-06-28 18:56:35.516 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 18:56:34.64,3.58,0 
+2021-06-28 18:56:40.449 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 18:56:39.78,27.79,61.29,1004.0688,26.15 
+2021-06-28 18:56:40.610 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 18:56:39.78,860.0,185263.0,4675.0 
+2021-06-28 18:56:40.700 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 18:56:39.78,3.73,0 
+2021-06-28 18:56:40.792 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-28 18:56:40.18,0.0,3257.0 
+2021-06-28 18:56:45.572 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 18:56:44.92,27.81,60.99,1004.0595,26.4 
+2021-06-28 18:56:45.698 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 18:56:44.92,990.0,218747.0,7227.0 
+2021-06-28 18:56:45.788 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 18:56:44.92,3.62,0 
+2021-06-28 18:56:46.903 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-28 18:56:46.29,48.41,3263.0 
+2021-06-28 18:56:50.702 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 18:56:50.06,27.84,60.87,1004.0643,26.4 
+2021-06-28 18:56:50.849 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 18:56:50.06,1097.0,246102.0,9954.0 
+2021-06-28 18:56:50.942 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 18:56:50.06,3.41,0 
+2021-06-28 18:56:53.073 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-28 18:56:52.46,49.38,3268.0 
+2021-06-28 18:58:47.004 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:58:50.958 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:58:53.566 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:58:55.761 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:58:57.485 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:59:00.876 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:59:14.583 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:59:15.669 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:59:16.732 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:59:17.677 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:17.682 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:17.704 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:17.714 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:26.486 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:26.490 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:26.506 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:26.523 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:29.324 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 18:59:30.504 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:30.510 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:30.528 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:30.541 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:32.780 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:32.790 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:32.807 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:32.816 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:43.157 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:43.167 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:43.181 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 18:59:43.201 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:01:07.378 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:01:07.385 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:01:07.401 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:01:07.416 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:01:08.039 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:01:08.592 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:01:09.248 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:01:10.039 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:01:10.954 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:00.221 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:01.064 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:08.885 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:03:08.890 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:03:08.895 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:03:08.902 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:03:25.557 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:30.393 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:33.079 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:35.513 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:38.455 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:45.601 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:48.397 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:49.271 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:50.159 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:51.445 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:52.214 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:03:52.998 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:07:25.125 INFO  Connected to database. 
+2021-06-28 19:10:19.160 INFO   
+2021-06-28 19:10:19.163 ERROR SQLITE_MISUSE: not an error 
+2021-06-28 19:10:20.050 INFO   
+2021-06-28 19:10:20.053 ERROR SQLITE_MISUSE: not an error 
+2021-06-28 19:10:27.422 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:10:34.290 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:10:34.304 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:10:34.332 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:10:34.348 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:10:37.108 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:10:37.111 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:10:37.137 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:10:37.139 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:10:37.839 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:12:32.549 INFO  Connected to database. 
+2021-06-28 19:13:28.547 INFO  Connected to database. 
+2021-06-28 19:13:31.769 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:13:45.728 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:13:46.711 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:13:46.719 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:13:46.744 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:13:46.764 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-06-29"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-06-28 19:14:54.285 INFO  Connected to database. 
+2021-06-28 19:15:00.356 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-27 20:10:05.123,26.7,80.5,120,28.4 
+2021-06-28 19:15:50.882 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:15:50.883 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.time 
+2021-06-28 19:16:40.765 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:16:40.767 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.time 
+2021-06-28 19:16:57.593 INFO  Connected to database. 
+2021-06-28 19:18:29.324 INFO  Connected to database. 
+2021-06-28 19:19:10.454 INFO  Connected to database. 
+2021-06-28 19:19:30.538 INFO  Connected to database. 
+2021-06-28 19:19:31.934 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:20:14.382 INFO  Connected to database. 
+2021-06-28 19:20:17.533 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:20:17.539 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.time 
+2021-06-28 19:20:27.295 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:20:27.297 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.time 
+2021-06-28 19:23:04.336 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:23:04.337 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.time 
+2021-06-28 19:23:18.801 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:23:18.802 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.time 
+2021-06-28 19:23:30.050 INFO  Connected to database. 
+2021-06-28 19:23:35.659 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:23:35.665 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.time 
+2021-06-28 19:25:19.366 INFO  Connected to database. 
+2021-06-28 19:26:59.076 INFO  Connected to database. 
+2021-06-28 19:41:21.863 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:41:21.20,30.54,52.75,1003.7678,26.2 
+2021-06-28 19:41:22.026 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 19:41:21.20,10427.0,440840.0,86625.0 
+2021-06-28 19:41:22.114 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 19:41:21.20,1.62,0 
+2021-06-28 19:41:26.089 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-28 19:41:25.53,0.0,3320.0 
+2021-06-28 19:41:26.884 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:41:26.29,30.57,52.46,1003.7577,25.9 
+2021-06-28 19:41:26.980 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 19:41:26.29,10415.0,440840.0,86625.0 
+2021-06-28 19:41:27.068 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 19:41:26.29,1.88,0 
+2021-06-28 19:41:32.046 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:41:31.44,30.57,52.09,1003.7659,26.55 
+2021-06-28 19:41:32.179 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 19:41:31.44,10415.0,438139.0,86403.0 
+2021-06-28 19:41:32.276 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 19:41:31.44,1.98,2 
+2021-06-28 19:41:32.342 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-28 19:41:31.79,57.68,3356.0 
+2021-06-28 19:41:37.169 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:41:36.58,30.57,52.68,1003.7637,26.55 
+2021-06-28 19:43:00.585 INFO  Connected to database. 
+2021-06-28 19:43:34.166 INFO  Connected to database. 
+2021-06-28 19:43:40.654 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:43:40.658 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.time 
+2021-06-28 19:44:36.543 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:44:35.90,30.7,52.05,1003.7687,26.55 
+2021-06-28 19:44:36.703 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 19:44:35.90,10596.0,440840.0,86625.0 
+2021-06-28 19:44:36.792 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 19:44:35.90,1.84,0 
+2021-06-28 19:44:40.789 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-28 19:44:40.23,0.0,3322.0 
+2021-06-28 19:44:41.584 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:44:41.00,30.71,52.02,1003.769,26.6 
+2021-06-28 19:44:41.679 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 19:44:41.00,10608.0,440840.0,86625.0 
+2021-06-28 19:44:41.762 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 19:44:41.00,1.78,0 
+2021-06-28 19:44:46.733 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:44:46.13,30.71,52.1,1003.7669,26.55 
+2021-06-28 19:44:46.886 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 19:44:46.13,10620.0,440840.0,86403.0 
+2021-06-28 19:44:47.002 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 19:44:46.13,1.84,0 
+2021-06-28 19:44:47.084 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-28 19:44:46.53,57.96,3357.0 
+2021-06-28 19:44:51.855 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:44:51.26,30.72,51.67,1003.7723,26.55 
+2021-06-28 19:45:03.177 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:45:06.327 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:45:08.530 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:45:12.163 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:45:15.940 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:45:17.493 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:45:39.216 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:45:40.631 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:45:44.216 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-06-28"
+                                AND time < "2021-06-29" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-06-28 19:48:31.142 INFO  Connected to database. 
+2021-06-28 19:49:52.312 INFO  Connected to database. 
+2021-06-28 19:50:33.207 INFO  Connected to database. 
+2021-06-28 19:51:07.530 INFO  Connected to database. 
+2021-06-28 19:51:17.715 INFO  Connected to database. 
+2021-06-28 19:51:35.819 INFO  Connected to database. 
+2021-06-28 19:51:44.430 INFO  Connected to database. 
+2021-06-28 19:51:50.262 INFO  Connected to database. 
+2021-06-28 19:52:36.832 INFO  Connected to database. 
+2021-06-28 19:53:10.546 INFO  Connected to database. 
+2021-06-28 19:53:20.475 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:53:19.82,30.69,52.5,1003.7083,26.6 
+2021-06-28 19:53:20.674 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 19:53:19.82,11131.0,440840.0,87747.0 
+2021-06-28 19:53:20.799 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 19:53:19.82,0.05,0 
+2021-06-28 19:53:32.137 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); ,,,, 
+2021-06-28 19:53:32.138 ERROR SQLITE_CONSTRAINT: NOT NULL constraint failed: Weather.time 
+2021-06-28 19:58:45.661 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:58:45.04,30.5,52.46,1003.8782,21.65 
+2021-06-28 19:58:45.810 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 19:58:45.04,11378.0,435467.0,87747.0 
+2021-06-28 19:58:45.897 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 19:58:45.04,2.06,0 
+2021-06-28 19:58:49.909 INFO  INSERT INTO sound VALUES(?, ?, ?); 2021-06-28 19:58:49.37,0.0,3323.0 
+2021-06-28 19:58:50.711 INFO  INSERT INTO WEATHER  VALUES(?, ?, ?, ?, ?); 2021-06-28 19:58:50.13,30.51,52.86,1003.8756,26.55 
+2021-06-28 19:58:50.804 INFO  INSERT INTO GAS VALUES(?, ?, ?, ?); 2021-06-28 19:58:50.13,11365.0,435467.0,87634.0 
+2021-06-28 19:58:50.883 INFO  INSERT INTO LIGHT VALUES(?, ?, ?); 2021-06-28 19:58:50.13,2.14,0 

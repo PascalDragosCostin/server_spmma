@@ -89,7 +89,7 @@ h_gauge.setTextField(document.getElementById("h_preview-textfield"));
 
 /* Termal Comford Index gauge */
 function get_itu(t, u) {
-    return (t * 1.8 + 32) - (0.55 - 0.0055 * u) * [(t * 1.8 + 32) - 58];
+    return (t * 1.8 + 32) - (0.55 - 0.0055 * u) * ((t * 1.8 + 32) - 58);
 }
 
 var tci_opts = {
