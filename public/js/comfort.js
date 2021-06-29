@@ -225,6 +225,7 @@ get_last_noise();
 
 
 /* Gases Gauge */
+/* OX */ 
 var g_opts = {
     angle: -0.2,
     lineWidth: 0.2,
@@ -244,22 +245,22 @@ var g_opts = {
         fractionDigits: 0
     },
     staticZones: [
-        { strokeStyle: "#18F749", min: 0, max: 5000 },
-        { strokeStyle: "#23F718", min: 5000, max: 10000 },
-        { strokeStyle: "#60F718", min: 8000, max: 10500 },
+        { strokeStyle: "#18F749", min: 0, max: 10_000 },
+        { strokeStyle: "#23F718", min: 10_000, max: 15_000 },
+        { strokeStyle: "#60F718", min: 15_000, max: 16_500 },
 
-        { strokeStyle: "#B8F718", min: 10500, max: 12500 },
+        { strokeStyle: "#B8F718", min: 16_500, max: 18_500 },
 
-        { strokeStyle: "#E1EE19", min: 12000, max: 14000 },
-        { strokeStyle: "#F75818", min: 14000, max: 16000 },
-        { strokeStyle: "#FC0800", min: 16000, max: 23000 },
+        { strokeStyle: "#E1EE19", min: 18_500, max: 20_500 },
+        { strokeStyle: "#F75818", min: 20_500, max: 25_000 },
+        { strokeStyle: "#FC0800", min: 25_000, max: 30_000 },
     ],
 };
 
 var g_target = document.getElementById('g_gauge');
 var g_gauge = new Gauge(g_target).setOptions(g_opts);
 g_gauge.setMinValue(0);
-g_gauge.maxValue = 23000;
+g_gauge.maxValue = 30_000;
 
 // cu cat creste rezistenta, cu atat e mai mare concentratie de NO2
 var g_textRenderer = new TextRenderer(document.getElementById("g_preview-textfield"));
@@ -275,7 +276,7 @@ g_textRenderer.render = function (gauge) {
 g_gauge.setTextField(g_textRenderer);
 
 
-
+/* RED */
 var g2_opts = {
     angle: -0.2,
     lineWidth: 0.2,
@@ -295,27 +296,28 @@ var g2_opts = {
         fractionDigits: 0
     },
     staticZones: [
-        { strokeStyle: "#18F749", min: 100, max: 150 },
-        { strokeStyle: "#23F718", min: 150, max: 250 },
-        { strokeStyle: "#60F718", min: 250, max: 300 },
+        { strokeStyle: "#18F749", min: 600, max: 800 },
+        { strokeStyle: "#23F718", min: 500, max: 600 },
+        { strokeStyle: "#60F718", min: 350, max: 500 },
 
-        { strokeStyle: "#B8F718", min: 300, max: 400 },
+        { strokeStyle: "#B8F718", min: 300, max: 350 },
 
-        { strokeStyle: "#E1EE19", min: 400, max: 450 },
-        { strokeStyle: "#F75818", min: 450, max: 550 },
-        { strokeStyle: "#FC0800", min: 550, max: 600 },
+        { strokeStyle: "#E1EE19", min: 200, max: 300 },
+        { strokeStyle: "#F75818", min: 100, max: 200 },
+        { strokeStyle: "#FC0800", min: 000, max: 100 },
     ],
 };
 
 var g2_target = document.getElementById('g2_gauge');
 var g2_gauge = new Gauge(g2_target).setOptions(g2_opts);
-g2_gauge.setMinValue(100);
-g2_gauge.maxValue = 600;
+g2_gauge.setMinValue(0);
+g2_gauge.maxValue = 800;
 
 // cu cat creste rezistenta, cu atat e mai mica concentratia
 var g2_textRenderer = new TextRenderer(document.getElementById("g2_preview-textfield"));
 g2_textRenderer.render = function (gauge) {
     let percent = (gauge.displayedValue - gauge.minValue)/ (gauge.maxValue - gauge.minValue) - 0.5;
+    percent = -percent;
     let sign = ""
     if (percent > 0)
     {
@@ -326,6 +328,7 @@ g2_textRenderer.render = function (gauge) {
 g2_gauge.setTextField(g2_textRenderer);
 
 
+/* NH3 */
 var g3_opts = {
     angle: -0.2,
     lineWidth: 0.2,
@@ -345,27 +348,29 @@ var g3_opts = {
         fractionDigits: 0
     },
     staticZones: [
-        { strokeStyle: "#18F749", min: 10, max: 15 },
-        { strokeStyle: "#23F718", min: 15, max: 25 },
-        { strokeStyle: "#60F718", min: 25, max: 35 },
+        { strokeStyle: "#18F749", min: 110, max: 120 },
+        { strokeStyle: "#23F718", min: 100, max: 110 },
+        { strokeStyle: "#60F718", min: 85, max: 100 },
 
-        { strokeStyle: "#B8F718", min: 35, max: 45 },
+        { strokeStyle: "#B8F718", min: 75, max: 85 },
 
-        { strokeStyle: "#E1EE19", min: 45, max: 65 },
-        { strokeStyle: "#F75818", min: 65, max: 75 },
-        { strokeStyle: "#FC0800", min: 75, max: 100 },
+        { strokeStyle: "#E1EE19", min: 65, max: 75 },
+        { strokeStyle: "#F75818", min: 50, max: 65 },
+        { strokeStyle: "#FC0800", min: 40, max: 50 },
     ],
 };
 
+
 var g3_target = document.getElementById('g3_gauge');
 var g3_gauge = new Gauge(g3_target).setOptions(g3_opts);
-g3_gauge.setMinValue(10);
-g3_gauge.maxValue = 90;
+g3_gauge.setMinValue(40);
+g3_gauge.maxValue = 120;
 
 // cu cat creste rezistenta, cu atat e mai mica concentratia
 var g3_textRenderer = new TextRenderer(document.getElementById("g3_preview-textfield"));
 g3_textRenderer.render = function (gauge) {
     let percent = (gauge.displayedValue - gauge.minValue)/ (gauge.maxValue - gauge.minValue) - 0.5;
+    percent = -percent;
     let sign = ""
     if (percent > 0)
     {
@@ -390,8 +395,8 @@ function get_last_gas() {
             let nh3 = json["nh3"];
 
             g_gauge.set(ox);
-            g2_gauge.set(g2_gauge.maxValue + g2_gauge.minValue - red/1000);
-            g3_gauge.set(g3_gauge.maxValue + g3_gauge.minValue - nh3/1000); 
+            g2_gauge.set(red/1000);
+            g3_gauge.set(nh3/1000); 
         }
     };
 
