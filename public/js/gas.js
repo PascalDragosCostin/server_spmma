@@ -1,10 +1,6 @@
 var myChart;
 
-function  create_chart(xlabels, oxs, reds, nh3s, period) {
-    // min si max pentru scalare
-    // let min = ytemps.reduce((min, y) => y < min ? y : min, ytemps[0]);
-    // let max = ytemps.reduce((max, y) => y > max ? y : max, ytemps[0]);
-
+function create_chart(xlabels, oxs, reds, nh3s, period) {
     var ctx = document.getElementById('gasChart').getContext('2d');
     var gradient = ctx.createLinearGradient(0, 0, 0, 800);
     gradient.addColorStop(0.15, '#F6F49A');
@@ -30,7 +26,6 @@ function  create_chart(xlabels, oxs, reds, nh3s, period) {
                     pointRadius: 3,
                     pointHoverRadius: 5,
                     pointHoverBackgroundColor: '#e4ffff',
-                    //backgroundColor: gradient,
                     borderWidth: 1
                 },
                 {
@@ -44,7 +39,6 @@ function  create_chart(xlabels, oxs, reds, nh3s, period) {
                     pointRadius: 3,
                     pointHoverRadius: 5,
                     pointHoverBackgroundColor: '#e4ffff',
-                    //backgroundColor: gradient,
                     borderWidth: 1
                 },
                 {
@@ -55,14 +49,11 @@ function  create_chart(xlabels, oxs, reds, nh3s, period) {
                     borderColor: '#E1FF04',
                     backgroundColor: 'rgba(224, 247, 61, 0.5)',
                     pointBackgroundColor: 'rgba(224, 247, 61, 1)',
-
                     pointRadius: 3,
                     pointHoverRadius: 5,
                     pointHoverBackgroundColor: '#e4ffff',
-                    //backgroundColor: gradient,
                     borderWidth: 1
                 },
-                
             ]
         },
         options: {
@@ -91,14 +82,12 @@ function  create_chart(xlabels, oxs, reds, nh3s, period) {
                         suggestedMax: 0.5,
                         fontColor: '#e4ffff',
                         callback: function (value, index, values) {
-                            if (value > 0) 
-                            {
+                            if (value > 0) {
                                 return "+" + value.toFixed(2) + "%";
-                            }else
-                            if(value == 0)
-                            {
-                                return "Media"
-                            }
+                            } else
+                                if (value == 0) {
+                                    return "Media"
+                                }
                             return value.toFixed(2) + "%";
                         }
                     }
@@ -129,8 +118,6 @@ function  create_chart(xlabels, oxs, reds, nh3s, period) {
                         }
                     }
                 }],
-
-
             },
             elements: {
                 point: {
@@ -167,7 +154,7 @@ function get_data(index) {
                 reds.push(element.red);
                 nh3s.push(element.nh3);
             });
-            
+
             create_chart(xlabels, scale_array(oxs), scale_array(reds), scale_array(nh3s), period);
         }
     };
@@ -177,18 +164,19 @@ function get_data(index) {
     xhttp.send();
 }
 
-function scale_array(arr)
-{
+
+function scale_array(arr) {
     let average = (array) => array.reduce((a, b) => a + b, 0) / array.length;
-            
+
     let min = Math.min(...arr);
     let max = Math.max(...arr);
     let avg = average(arr);
 
-    arr = arr.map(x => (x-avg)/(max-min));
+    arr = arr.map(x => (x - avg) / (max - min));
 
     return arr;
 }
+
 
 const selectElement = document.querySelector('#perioada');
 
@@ -199,8 +187,6 @@ selectElement.addEventListener('change', (event) => {
     myChart.destroy();
     get_data(index);
 });
-
-
 
 // prima apelare a functiei
 get_data(0);

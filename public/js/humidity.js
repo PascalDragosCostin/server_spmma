@@ -37,7 +37,6 @@ function create_chart(xlabels, ytemps, period) {
                     }
                 }
             },
-
             legend: {
                 display: false,
                 labels: {
@@ -56,7 +55,6 @@ function create_chart(xlabels, ytemps, period) {
                             return value.toFixed(2) + "%";
                         }
                     }
-                    
                 }],
                 xAxes: [{
                     ticks: {
@@ -84,8 +82,6 @@ function create_chart(xlabels, ytemps, period) {
                         }
                     }
                 }],
-
-
             },
             elements: {
                 point: {
@@ -131,22 +127,12 @@ function get_data(index) {
 
 const selectElement = document.querySelector('#perioada');
 
-
 selectElement.addEventListener('change', (event) => {
     var index = $(selectElement).prop('selectedIndex');
     // sterge vechiul grafic
     myChart.destroy();
     get_data(index);
 });
-
-
-// setInterval(function(){
-//     var index = $(selectElement).prop('selectedIndex');
-//     // sterge vechiul grafic
-//     myChart.destroy();
-//     get_data(index);
-// }, 5000);
-
 
 // prima apelare a functiei
 get_data(0);

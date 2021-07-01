@@ -1,7 +1,7 @@
 var myChart;
 
 function create_chart(xlabels, ytemps, period) {
-    // min si max pentru scalare
+    // min si max pentru scalarea graficului
     let min = ytemps.reduce((min, y) => y < min ? y : min, ytemps[0]);
     let max = ytemps.reduce((max, y) => y > max ? y : max, ytemps[0]);
 
@@ -21,7 +21,6 @@ function create_chart(xlabels, ytemps, period) {
                     lineTension: 0.1,
                     cubicInterpolationMode: "monotone",
                     borderColor: 'rgba(255, 255, 255, 1)',
-                    // backgroundColor: 'rgba(147, 230, 217, 0.7)',
                     pointRadius: 5,
                     pointHoverRadius: 12,
                     pointHoverBackgroundColor: '#e4ffff',
@@ -86,8 +85,6 @@ function create_chart(xlabels, ytemps, period) {
                         }
                     }
                 }],
-
-
             },
             elements: {
                 point: {
@@ -113,7 +110,6 @@ function get_data(index) {
         if (this.readyState == 4 && this.status == 200) {
             let json = JSON.parse(this.responseText);  // rows, format json
 
-            // document.getElementById("loader").innerHTML = json[0].time;
             let xlabels = [];
             let ytemps = [];
             json.forEach(element => {
@@ -140,15 +136,6 @@ selectElement.addEventListener('change', (event) => {
     myChart.destroy();
     get_data(index);
 });
-
-
-// setInterval(function(){
-//     var index = $(selectElement).prop('selectedIndex');
-//     // sterge vechiul grafic
-//     myChart.destroy();
-//     get_data(index);
-// }, 5000);
-
 
 // prima apelare a functiei
 get_data(0);

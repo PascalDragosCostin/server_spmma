@@ -1,4 +1,4 @@
-.auth_field {
+.authField {
     text-align: center;
     color: #e4ffff;
     display: block;
@@ -9,7 +9,7 @@
     border: 3px solid #e4ffff; 
 }
 
-.auth_field label {
+.authField label {
     padding: 10px 0px;
     display: inline-block;
     width: 300px;

@@ -3,6 +3,7 @@ var t_opts = {
     angle: -0.2, // The span of the gauge arc
     lineWidth: 0.2, // The line thickness
     radiusScale: 1, // Relative radius
+
     pointer: {
         length: 0.5, // // Relative to gauge radius
         strokeWidth: 0.045, // The thickness
@@ -13,7 +14,6 @@ var t_opts = {
     limitMin: true,      // If true, the min value of the gauge will be fixed
     highDpiSupport: true,     // High resolution support
     fractionDigits: 1,
-    //percentColors: [[0.0, "#a9d70b" ], [0.50, "#f9c802"], [1.0, "#ff0000"]]
     staticLabels: {
         font: "10px sans-serif",  // Specifies font
         labels: [15, 17, 19, 20, 24, 25, 27, 30],  // Print labels at these values
@@ -43,7 +43,6 @@ t_textRenderer.render = function (gauge) {
     this.el.innerHTML = "Temperatură: " + (gauge.displayedValue).toFixed(1) + "°C";
 };
 t_gauge.setTextField(t_textRenderer);
-
 
 
 /* Humidity gauge */
@@ -129,7 +128,7 @@ tci_gauge.setTextField(document.getElementById("tci_preview-textfield"));
 
 
 /* Actualizare t, h, TCI */
-function get_last_t_h_itu() {
+function getLastWeather() {
 
     var xhttp;
     xhttp = new XMLHttpRequest();
@@ -151,13 +150,7 @@ function get_last_t_h_itu() {
     xhttp.open("GET", "/db_gauge_weather", true);
     xhttp.send();
 }
-
-/* Primul set de valori */
-get_last_t_h_itu();
-// t_gauge.set(28.5);
-
-/* Actualizare periodica */
-//setInterval(get_last_t_h_itu, 5000);
+getLastWeather();
 
 
 /* Noise Gauge */
@@ -203,7 +196,7 @@ n_gauge.setTextField(document.getElementById("n_preview-textfield"));
 
 
 /* Actualizare zgomot */
-function get_last_noise() {
+function getLastNoise() {
 
     var xhttp;
     xhttp = new XMLHttpRequest();
@@ -220,7 +213,7 @@ function get_last_noise() {
     xhttp.open("GET", "/db_gauge_noise", true);
     xhttp.send();
 }
-get_last_noise();
+getLastNoise();
 
 
 
@@ -360,7 +353,6 @@ var g3_opts = {
     ],
 };
 
-
 var g3_target = document.getElementById('g3_gauge');
 var g3_gauge = new Gauge(g3_target).setOptions(g3_opts);
 g3_gauge.setMinValue(40);
@@ -382,7 +374,7 @@ g3_gauge.setTextField(g3_textRenderer);
 
 
 /* Actualizare gaz */
-function get_last_gas() {
+function getLastGas() {
 
     var xhttp;
     xhttp = new XMLHttpRequest();
@@ -403,7 +395,7 @@ function get_last_gas() {
     xhttp.open("GET", "/db_gauge_gas", true);
     xhttp.send();
 }
-get_last_gas();
+getLastGas();
 
 
 /* Light Gauge */
@@ -445,7 +437,6 @@ var l_gauge = new Gauge(l_target).setOptions(l_opts);
 l_gauge.setMinValue(Math.log(1));
 l_gauge.maxValue = Math.log(1400);
 
-
 var l_textRenderer = new TextRenderer(document.getElementById("l_preview-textfield"));
 l_textRenderer.render = function (gauge) {
     if (gauge.displayedValue == gauge.maxValue) {
@@ -458,10 +449,8 @@ l_textRenderer.render = function (gauge) {
 l_gauge.setTextField(l_textRenderer);
 
 
-
 /* Actualizare lumina */
-function get_last_light() {
-
+function getLastLight() {
     var xhttp;
     xhttp = new XMLHttpRequest();
 
@@ -477,4 +466,15 @@ function get_last_light() {
     xhttp.open("GET", "/db_gauge_light", true);
     xhttp.send();
 }
-get_last_light();
+getLastLight();
+
+
+/* Actualizare periodica */ 
+function getLastValues(){
+    console.
+    getLastWeather();
+    getLastNoise();
+    getLastGas();
+    getLastLight();
+}
+// setInterval(getLastValues, 5000);

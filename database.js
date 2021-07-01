@@ -12,7 +12,8 @@ date = new Date(date.getTime() - userTimezoneOffset);
 
 
 module.exports = function (app, db, databaseLogger) {
-    // Temperatura
+
+    // Temperatura => avg
     try {
         app.get('/db_temperature', (req, res) => {
             let perioada = req.query.period;
@@ -29,22 +30,27 @@ module.exports = function (app, db, databaseLogger) {
                                 GROUP BY val
                                 ORDER BY time;`;
                     break;
+
                 case "Month":
-                    conditon = `time >= "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}" AND time < "${date.getFullYear()}-${(date.getMonth() + 2).pad(2)}"`;
+                    conditon = `time >= "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}" 
+                                AND time < "${date.getFullYear()}-${(date.getMonth() + 2).pad(2)}"`;
                     sql = `SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
                                 FROM Weather
                                 WHERE ${conditon} AND valDay NOT NULL
                                 GROUP BY valDay
                                 ORDER BY time;`;
                     break;
+
                 case "Year":
-                    conditon = `time >= "${date.getFullYear()}" AND time < "${date.getFullYear() + 1}"`;
+                    conditon = `time >= "${date.getFullYear()}" 
+                                AND time < "${date.getFullYear() + 1}"`;
                     sql = `SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
                                 FROM Weather 
                                 WHERE ${conditon} AND val NOT NULL
                                 GROUP BY val
                                 ORDER BY time;`;
                     break;
+
                 case "All":
                     conditon = 'True';
                     sql = `SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
@@ -74,7 +80,7 @@ module.exports = function (app, db, databaseLogger) {
     }
 
 
-    // Umiditatea
+    // Umiditatea => avg
     try {
         app.get('/db_humidity', (req, res) => {
             let perioada = req.query.period;
@@ -101,7 +107,8 @@ module.exports = function (app, db, databaseLogger) {
                                 ORDER BY time;`;
                     break;
                 case "Year":
-                    conditon = `time >= "${date.getFullYear()}" AND time < "${date.getFullYear() + 1}"`;
+                    conditon = `time >= "${date.getFullYear()}"
+                                AND time < "${date.getFullYear() + 1}"`;
                     sql = `SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
                                 FROM Weather 
                                 WHERE ${conditon} AND val NOT NULL
@@ -137,7 +144,7 @@ module.exports = function (app, db, databaseLogger) {
     }
 
 
-    // Gas
+    // Gas => max
     try {
         app.get('/db_gas', (req, res) => {
             let perioada = req.query.period;
@@ -164,7 +171,8 @@ module.exports = function (app, db, databaseLogger) {
                                 ORDER BY time;`;
                     break;
                 case "Year":
-                    conditon = `time >= "${date.getFullYear()}" AND time < "${date.getFullYear() + 1}"`;
+                    conditon = `time >= "${date.getFullYear()}"
+                                AND time < "${date.getFullYear() + 1}"`;
                     sql = `SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
                                 FROM Gas 
                                 WHERE ${conditon} AND val NOT NULL
@@ -201,7 +209,7 @@ module.exports = function (app, db, databaseLogger) {
 
 
 
-    // Light
+    // Light => avg
     try {
         app.get('/db_light', (req, res) => {
             let perioada = req.query.period;
@@ -228,7 +236,8 @@ module.exports = function (app, db, databaseLogger) {
                                 ORDER BY time;`;
                     break;
                 case "Year":
-                    conditon = `time >= "${date.getFullYear()}" AND time < "${date.getFullYear() + 1}"`;
+                    conditon = `time >= "${date.getFullYear()}"
+                                AND time < "${date.getFullYear() + 1}"`;
                     sql = `SELECT time, avg(light) as light, strftime('%m', time) as val
                                 FROM Light 
                                 WHERE ${conditon} AND val NOT NULL
@@ -265,7 +274,7 @@ module.exports = function (app, db, databaseLogger) {
 
 
 
-    // Sound = Noise
+    // Sound = Noise => avg
     try {
         app.get('/db_noise', (req, res) => {
             let perioada = req.query.period;
@@ -292,7 +301,8 @@ module.exports = function (app, db, databaseLogger) {
                                 ORDER BY time;`;
                     break;
                 case "Year":
-                    conditon = `time >= "${date.getFullYear()}" AND time < "${date.getFullYear() + 1}"`;
+                    conditon = `time >= "${date.getFullYear()}"
+                                AND time < "${date.getFullYear() + 1}"`;
                     sql = `SELECT time, avg(db) as db, strftime('%m', time) as val
                                 FROM Sound 
                                 WHERE ${conditon} AND val NOT NULL

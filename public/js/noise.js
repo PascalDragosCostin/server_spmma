@@ -41,7 +41,6 @@ function create_chart(xlabels, ytemps, period) {
                     }
                 }
             },
-
             legend: {
                 display: false,
                 labels: {
@@ -86,8 +85,6 @@ function create_chart(xlabels, ytemps, period) {
                         }
                     }
                 }],
-
-
             },
             elements: {
                 point: {
@@ -109,6 +106,7 @@ function get_data(index) {
         3: "All"
     };
     let period = dict[index];
+
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let json = JSON.parse(this.responseText);  // rows, format json
@@ -132,7 +130,6 @@ function get_data(index) {
 
 
 const selectElement = document.querySelector('#perioada');
-
 
 selectElement.addEventListener('change', (event) => {
     var index = $(selectElement).prop('selectedIndex');

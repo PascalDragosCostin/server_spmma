@@ -1,13 +1,15 @@
-const express = require('express');
-const expressLayouts = require('express-ejs-layouts');
-const session = require('express-session');
+const express = require('express');  // functii de callback pe cai+metoda
+const expressLayouts = require('express-ejs-layouts');  // paginile au acelasi layout
+const session = require('express-session');  // variabile de sesiune
 
-const fs = require("fs");
-const morgan = require('morgan');
-const path = require('path')
-const rfs = require('rotating-file-stream') 
-var nodemailer = require('nodemailer');
+const fs = require("fs");  // file system
+const morgan = require('morgan');  // middleware pentru log cu accesul pe server
+const path = require('path')  // concatenare de cai
+const rfs = require('rotating-file-stream')  // fisiere diferite in fiecare zi
+const simpleNodeLogger = require('simple-node-logger'); // logger pentru accesul la baza de date
+var nodemailer = require('nodemailer');  // client de mail pentru notifcare prin mail
 
+/* Initializarea aplicatiei */
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -19,16 +21,16 @@ app.use(express.urlencoded({
 }));
 
 
-// Date de sesiune, se salveaza la server 
+/* Date de sesiune, se salveaza la server */
 app.use(session({
-    secret: "PD",
+    secret: "PascalDragos",
     cookie: {},
     resave: true,
     saveUninitialized: true
 }));
 
 
-// Sistem de fisiere roll
+/* Sistem de fisiere roll */
 const pad = num => (num > 9 ? "" : "0") + num;
 const generator = () => {
   let time = new Date();
@@ -45,29 +47,28 @@ const accessLogStream = rfs.createStream(generator, {
 })
 
 
-// Logger middleware pentru acces pe server
+/* Logger middleware pentru acces pe server cu rotating file system */
 app.use(morgan(':date[iso] :method, ":url", status=:status, response-time=:response-time ms', {
     stream: accessLogStream
 }));
 
 
-// Logger pentru accesul la baza de date
-const SimpleNodeLogger = require('simple-node-logger'),
-opts = {
+/* Logger pentru accesul la baza de date */
+const opts = {
         logDirectory:'./database_logs', 
         fileNamePattern:'<DATE>_db.log',
-        dateFormat:'YYYY.MM.DD',
+        dateFormat:'YYYY-MM-DD',
         logFilePath:'database.log',
         timestampFormat:'YYYY-MM-DD HH:mm:ss.SSS'
-    },
-databaseLogger = SimpleNodeLogger.createRollingFileLogger( opts );
+    };
+const databaseLogger = simpleNodeLogger.createRollingFileLogger( opts );
 
 
 /* Gestiunea bazei de date SQLite */
 const sqlite3 = require('sqlite3').verbose();
 let db = new sqlite3.Database('./db/spmma.db', (err) => {
     if (err) {
-        return console.error(err.message);
+        return databaseLogger.error(err.message);
     }
     databaseLogger.info('Connected to database.');
 });
@@ -97,47 +98,44 @@ var mailOptions = {
 };
 
 
+/* Autorizarea accesului pe server cu parola sau cu valoare din session */
+// app.use(function (req, res, next) {
+//     console.log(req.path);
+
+//     // Verifica daca e cerere de la RPI cu parola
+//     let pas = req.headers['pass'];
+//     if (pas == restPassword) {     // undefined == "..." => false
+//         next();
+//     }
+//     // Verifica daca e cerere din browser de la o sesiune autentificata
+//     else {
+//         res.locals.session = req.session;
+//         if (!req.session.isAuthorized) {
+//             if (req.path == "/verify-code") {
+//                 if (req.body.code == authorizationCode) {
+//                     req.session.isAuthorized = true;
+//                     res.redirect("/")
+//                 }
+//                 else {
+//                     res.render("authorize", { page_name: 'authorize' })
+//                 }
+//             }
+//             else {
+//                 res.render("authorize", { page_name: 'authorize' })
+//             }
+//         }
+//         else {
+//             next();
+//         }
+//     }
+// });
 
 
-/* Autorizarea vizualizarii datelor */
-app.use(function (req, res, next) {
-    console.log(req.path);
-
-    // header pe care il au cererile care vin de la RPI
-    let pas = req.headers['pass'];
-    if (pas == restPassword) {     // undefined == "..." => false
-        next();
-    }
-    else {
-        res.locals.session = req.session;
-        console.log(req.path);
-        if (!req.session.isAuthorized) {
-            if (req.path == "/verify-code") {
-                if (req.body.code == authorizationCode) {
-                    req.session.isAuthorized = true;
-                    res.redirect("/")
-                }
-                else {
-                    res.render("authorize", { page_name: 'authorize' })
-                }
-            }
-            else {
-                res.render("authorize", { page_name: 'authorize' })
-            }
-        }
-        else {
-            next();
-        }
-    }
-});
-
-
-// rutele de la rest.js, inainte de partea cu autorizarea cu parola
-var rest_routes = require('./rest.js')(app, db, databaseLogger, transporter, mailOptions);
-var database_routes = require('./database.js')(app, db, databaseLogger);
-var gauge_database_routes = require('./gauge_database.js')(app, db, databaseLogger);
-var site_routes = require('./site.js')(app);
-
+/* rutele pentru rest, site-ul web si accesul asincron la baza de date*/
+var restRoutes = require('./rest.js')(app, db, databaseLogger, transporter, mailOptions);
+var siteRoutes = require('./site.js')(app);
+var databaseRoutes = require('./database.js')(app, db, databaseLogger);
+var gaugeDatabaseRoutes = require('./gauge_database.js')(app, db, databaseLogger);
 
 
 /* Accesearea unui link gresit te duce pe default */

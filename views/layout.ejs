@@ -5,11 +5,12 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="css/layout.css">
-  <link rel="stylesheet" type="text/css" href="css/canvas.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css" />
+  <link rel="stylesheet" type="text/css" href="css/canvas.css" />
 
 </head>
 
@@ -26,27 +27,42 @@
     <nav>
       <div class="row">
         <div class="col-sm-1 text-center">
-          <a <% if (page_name =='about' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %> href="/about">Despre</a> </div> <!-- Informatii despre licenta-->
+          <a <% if (pageName=='about' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>
+                href="/about">Despre</a>
+        </div> <!-- Informatii despre licenta-->
         <div class="col-sm-2 text-center">
-          <a <% if (page_name =='comfort' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/comfort">Confort</a> </div> <!-- Confort -->
+          <a <% if (pageName=='comfort' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>
+                href="/comfort">Confort</a>
+        </div> <!-- Confort -->
         <div class="col-sm-2 text-center">
-          <a <% if (page_name =='temperature' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/temperature">Temperatura</a> </div> <!-- T-->
+          <a <% if (pageName=='temperature' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>
+                href="/temperature">Temperatura</a>
+        </div> <!-- T-->
         <div class="col-sm-2 text-center">
-          <a <% if (page_name =='humidity' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/humidity">Umiditate</a> </div> <!-- H -->
+          <a <% if (pageName=='humidity' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>
+                href="/humidity">Umiditate</a>
+        </div> <!-- H -->
         <div class="col-sm-2 text-center">
-          <a <% if (page_name =='gas' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/gas">Gaze</a> </div> <!-- OX, RED, NH3-->
+          <a <% if (pageName=='gas' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/gas">Gaze</a>
+        </div> <!-- OX, RED, NH3-->
         <div class="col-sm-2 text-center">
-          <a <% if (page_name =='light' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/light">Lumina</a> </div> <!-- Light-->
+          <a <% if (pageName=='light' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>
+                href="/light">Lumina</a>
+        </div> <!-- Light-->
         <div class="col-sm-1 text-center">
-          <a <% if (page_name =='noise' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>href="/noise">Zgomot</a> </div> <!-- Mic -->
+          <a <% if (pageName=='noise' ) { %> class="nav-item-current" <%} else { %>class="nav-item"<% } %>
+                href="/noise">Zgomot</a>
+        </div> <!-- Mic -->
 
       </div>
     </nav>
+
 
     <main class="main">
       <%- body -%>
     </main>
 
+    
     <footer class="jos">
       &copy; 2021, Pascal Dragos-Costin
     </footer>

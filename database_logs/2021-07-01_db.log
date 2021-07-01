@@ -1,0 +1,489 @@
+2021-07-01 14:31:28.585 INFO  Connected to database. 
+2021-07-01 14:34:21.093 INFO  Connected to database. 
+2021-07-01 14:36:11.470 INFO  Connected to database. 
+2021-07-01 14:36:44.624 INFO  Connected to database. 
+2021-07-01 14:37:41.633 INFO  Connected to database. 
+2021-07-01 14:38:01.582 INFO  Connected to database. 
+2021-07-01 14:40:06.253 INFO  Connected to database. 
+2021-07-01 14:40:12.779 INFO  Connected to database. 
+2021-07-01 14:40:26.666 INFO  Connected to database. 
+2021-07-01 14:40:52.872 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:40:52.883 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:40:52.902 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:40:52.910 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:40:59.900 INFO  Connected to database. 
+2021-07-01 14:41:07.503 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:41:07.533 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:41:07.569 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:41:07.617 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:41:53.120 INFO  Connected to database. 
+2021-07-01 14:45:24.322 INFO  Connected to database. 
+2021-07-01 14:45:53.633 INFO  Connected to database. 
+2021-07-01 14:46:19.359 INFO  Connected to database. 
+2021-07-01 14:48:02.472 INFO  Connected to database. 
+2021-07-01 14:49:45.785 INFO  Connected to database. 
+2021-07-01 14:50:15.218 INFO  Connected to database. 
+2021-07-01 14:50:22.591 INFO  Connected to database. 
+2021-07-01 14:53:26.767 INFO  Connected to database. 
+2021-07-01 14:53:31.547 INFO  Connected to database. 
+2021-07-01 14:55:35.248 INFO  Connected to database. 
+2021-07-01 14:56:10.045 INFO  Connected to database. 
+2021-07-01 14:56:21.531 INFO  Connected to database. 
+2021-07-01 14:56:28.627 INFO  Connected to database. 
+2021-07-01 14:56:37.536 INFO  Connected to database. 
+2021-07-01 14:56:47.554 INFO  Connected to database. 
+2021-07-01 14:58:01.361 INFO  Connected to database. 
+2021-07-01 14:58:07.260 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-01"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:58:07.269 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-01"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:58:07.281 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-01"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:58:07.301 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-01"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:58:39.856 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-01"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:58:39.872 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-01"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:58:39.923 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-01"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:58:39.927 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-01"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 14:59:09.306 INFO  Connected to database. 
+2021-07-01 14:59:54.214 INFO  Connected to database. 
+2021-07-01 15:02:28.432 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:28.441 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:28.461 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:28.467 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:30.169 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 15:02:31.986 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 15:02:32.875 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:32.882 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:32.902 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:32.917 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:34.652 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 15:02:36.931 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 15:02:40.649 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:40.659 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:40.683 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:40.695 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:47.807 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:47.817 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:47.837 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:47.853 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:49.745 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 15:02:51.385 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 15:02:54.069 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:54.075 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:54.106 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:02:54.113 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:05:09.520 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 15:05:10.743 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:05:10.760 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:05:10.779 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:05:10.797 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:05:25.760 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 15:05:27.490 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 15:05:28.926 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:05:28.933 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:05:28.965 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:05:28.974 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 15:26:55.644 INFO  Connected to database. 
+2021-07-01 15:27:03.704 INFO  Connected to database. 
+2021-07-01 16:06:50.544 INFO  Connected to database. 
+2021-07-01 16:06:54.320 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:06:54.330 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:06:54.338 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:06:54.347 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:06:55.877 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 16:06:58.110 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 16:06:58.887 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 16:06:59.948 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 16:07:01.085 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-01 16:07:02.139 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 16:17:28.091 INFO  Connected to database. 
+2021-07-01 16:17:30.193 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-01"
+                                AND time < "2021-07-02" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-01 16:17:31.728 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:31.734 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:31.750 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:31.760 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:36.775 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:36.776 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:36.778 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:36.779 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:41.774 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:41.774 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:41.775 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:41.777 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:46.768 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:46.768 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:46.769 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:46.771 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:51.764 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:51.766 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:51.766 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:51.768 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:56.784 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:56.785 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:56.786 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-01 16:17:56.786 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-02"
+                                ORDER BY time
+                                DESC LIMIT 1; 

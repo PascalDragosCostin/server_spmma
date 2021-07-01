@@ -1,6 +1,8 @@
+
 let date = new Date();
 var userTimezoneOffset = date.getTimezoneOffset() * 60000;
 date = new Date(date.getTime() - userTimezoneOffset);
+
 var condition = `time <= "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${(date.getUTCDate()+1).pad(2)}"`
 
 
@@ -13,6 +15,7 @@ module.exports = function (app, db, databaseLogger) {
                                 WHERE ${condition}
                                 ORDER BY time
                                 DESC LIMIT 1;`;
+                                
             databaseLogger.info(sql);
 
             db.all(sql, [], (err, rows) => {

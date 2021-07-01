@@ -1,10 +1,6 @@
 var myChart;
 
 function create_chart(xlabels, ytemps, period) {
-    // min si max pentru scalare
-    let min = ytemps.reduce((min, y) => y < min ? y : min, ytemps[0]);
-    let max = ytemps.reduce((max, y) => y > max ? y : max, ytemps[0]);
-
     var ctx = document.getElementById('lightChart').getContext('2d');
     var gradient = ctx.createLinearGradient(0, 0, 0, 800);
     gradient.addColorStop(0.15, '#F6F49A');
@@ -41,7 +37,6 @@ function create_chart(xlabels, ytemps, period) {
                     }
                 }
             },
-
             legend: {
                 display: false,
                 labels: {
@@ -86,8 +81,6 @@ function create_chart(xlabels, ytemps, period) {
                         }
                     }
                 }],
-
-
             },
             elements: {
                 point: {
@@ -132,7 +125,6 @@ function get_data(index) {
 
 
 const selectElement = document.querySelector('#perioada');
-
 
 selectElement.addEventListener('change', (event) => {
     var index = $(selectElement).prop('selectedIndex');

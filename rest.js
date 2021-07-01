@@ -1,4 +1,6 @@
-/* Actualizarea datelor de pe server. Eventual cu parola de la server */
+/* Actualizarea datelor de pe server */
+
+/* Limitele pentru notificare prin mail */
 const TEMPERATURE_MIN = 17
 const TEMPERATURE_MAX = 27
 const HUMIDITY_MIN = 18
@@ -10,11 +12,12 @@ const NH3_MAX = 100_000
 
 module.exports = function (app, db, databaseLogger, transporter, mailOptions) {
     /*
+    body = 
     {
         "date": "2021-04-01 10:20:05.123",
         "temperature": 26.7,
         "humidity": 45.5,
-        "pressure": 120,
+        "pressure": 1009,
         "tmp36": 24.5
     }
     */
@@ -23,23 +26,25 @@ module.exports = function (app, db, databaseLogger, transporter, mailOptions) {
             let temp = req.body.tmp36;
             let hum = req.body.humidity;
             let date = req.body.date;
+
+            // Notificare prin mail
             let message = date + "\n";
             let subject = "Alerta"
-            let flag_mail = false;
+            let flagMail = false;
             if(temp < TEMPERATURE_MIN || temp > TEMPERATURE_MAX)
             {
-                flag_mail = true;
+                flagMail = true;
                 subject += " temperatura"
-                message = `Temperatura este în afara intervalului stabilit:\nTemperatura este ${temp} °C.\n`
+                message += `Temperatura este în afara intervalului stabilit:\nTemperatura este ${temp} °C.\n`
             }
             if(hum < HUMIDITY_MIN || hum > HUMIDITY_MAX)
             {
                 subject += " umiditate"
-                flag_mail = true;
+                flagMail = true;
                 message += `Umiditatea este în afara intervalului stabilit:\nUmiditatea este ${hum} %.\n`
             }
 
-            if(flag_mail)
+            if(flagMail)
             {
                 mailOptions["subject"] = subject;
                 mailOptions["text"] = message;
@@ -120,7 +125,6 @@ module.exports = function (app, db, databaseLogger, transporter, mailOptions) {
             res.satusCode = 500;
             res.send("Error: Internal Server Error");
         }
-
     });
 
 
@@ -133,24 +137,24 @@ module.exports = function (app, db, databaseLogger, transporter, mailOptions) {
 
             let message = date + "\n";
             let subject = "Alerta gaz"
-            let flag_mail = false;
+            let flagMail = false;
             if(ox > OX_MAX)
             {
-                flag_mail = true;
+                flagMail = true;
                 message += `Valoarea pentru gazele oxidante este în afara intervalului stabilit:\nValoarea este ${ox}.\n`
             }
             if(red > RED_MAX)
             {
-                flag_mail = true;
+                flagMail = true;
                 message += `Valoarea pentru gazele reducatoare este în afara intervalului stabilit:\nValoarea este ${red}.\n`
             }
             if(nh3 > NH3_MAX)
             {
-                flag_mail = true;
+                flagMail = true;
                 message += `Valoarea pentru gazele din categoria amoniacului este în afara intervalului stabilit:\nValoarea este ${nh3}.\n`
             }
 
-            if(flag_mail)
+            if(flagMail)
             {
                 mailOptions["subject"] = subject;
                 mailOptions["text"] = message;
@@ -182,34 +186,5 @@ module.exports = function (app, db, databaseLogger, transporter, mailOptions) {
             res.send("Error: Internal Server Error");
         }
     });
-
-
-    app.put('/error', (req, res) => {
-        try {
-            // Evit SQL Injection
-            let cmd = `INSERT INTO ERROR VALUES(?, ?);`;
-            let args = [req.body.date, req.body.id];
-            databaseLogger.info(cmd + " " + args);
-            db.run(cmd, args, function (err) {
-                if (err) {
-                    databaseLogger.error(err.message);
-                    res.status(403).send("Error: SQLite Error");
-                }
-                else {
-                    res.statusCode = 201;
-                    res.send("Created");
-                }
-            });
-        }
-        catch (err) {
-            databaseLogger.error(err.message);
-            res.satusCode = 500;
-            res.send("Error: Internal Server Error");
-        }
-    });
-
-
-    app.delete('/all', (req, res) => {
-
-    });
+    
 };
