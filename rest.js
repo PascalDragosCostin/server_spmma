@@ -5,9 +5,9 @@ const TEMPERATURE_MIN = 17
 const TEMPERATURE_MAX = 27
 const HUMIDITY_MIN = 18
 const HUMIDITY_MAX = 70
-const OX_MAX = 100_000
-const RED_MAX = 100_000
-const NH3_MAX = 100_000
+const OX_MAX = 30_000
+const RED_MIN = 200_000
+const NH3_MIN = 80_000
 
 
 module.exports = function (app, db, databaseLogger, transporter, mailOptions) {
@@ -143,12 +143,12 @@ module.exports = function (app, db, databaseLogger, transporter, mailOptions) {
                 flagMail = true;
                 message += `Valoarea pentru gazele oxidante este în afara intervalului stabilit:\nValoarea este ${ox}.\n`
             }
-            if(red > RED_MAX)
+            if(red < RED_MIN)
             {
                 flagMail = true;
                 message += `Valoarea pentru gazele reducatoare este în afara intervalului stabilit:\nValoarea este ${red}.\n`
             }
-            if(nh3 > NH3_MAX)
+            if(nh3 < NH3_MIN)
             {
                 flagMail = true;
                 message += `Valoarea pentru gazele din categoria amoniacului este în afara intervalului stabilit:\nValoarea este ${nh3}.\n`

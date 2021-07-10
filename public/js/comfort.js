@@ -60,20 +60,20 @@ var h_opts = {
     highDpiSupport: true,
     staticLabels: {
         font: "10px sans-serif",
-        labels: [0, 10, 20, 25, 55, 60, 80, 100],
+        labels: [0, 10, 20, 30, 60, 75, 80, 100],
         color: "#e4ffff",
         fractionDigits: 0
     },
     staticZones: [
         { strokeStyle: "#cc0033", min: 0, max: 10 },
         { strokeStyle: "#970065", min: 10, max: 20 },
-        { strokeStyle: "#660099", min: 20, max: 25 },
+        { strokeStyle: "#660099", min: 20, max: 30 },
 
-        { strokeStyle: "#0EDBF5", min: 25, max: 55 },
+        { strokeStyle: "#0EDBF5", min: 30, max: 60 },
 
-        { strokeStyle: "#660099", min: 55, max: 60 },
-        { strokeStyle: "#970065", min: 60, max: 70 },
-        { strokeStyle: "#cc0033", min: 70, max: 100 }
+        { strokeStyle: "#660099", min: 60, max: 75 },
+        { strokeStyle: "#970065", min: 75, max: 80 },
+        { strokeStyle: "#cc0033", min: 80, max: 100 }
     ],
 };
 
@@ -242,18 +242,18 @@ var g_opts = {
         { strokeStyle: "#23F718", min: 10_000, max: 15_000 },
         { strokeStyle: "#60F718", min: 15_000, max: 16_500 },
 
-        { strokeStyle: "#B8F718", min: 16_500, max: 18_500 },
+        { strokeStyle: "#B8F718", min: 16_500, max: 20_500 },
 
-        { strokeStyle: "#E1EE19", min: 18_500, max: 20_500 },
-        { strokeStyle: "#F75818", min: 20_500, max: 25_000 },
-        { strokeStyle: "#FC0800", min: 25_000, max: 30_000 },
+        { strokeStyle: "#E1EE19", min: 20_500, max: 25_500 },
+        { strokeStyle: "#F75818", min: 25_000, max: 30_000 },
+        { strokeStyle: "#FC0800", min: 30_000, max: 40_000 },
     ],
 };
 
 var g_target = document.getElementById('g_gauge');
 var g_gauge = new Gauge(g_target).setOptions(g_opts);
 g_gauge.setMinValue(0);
-g_gauge.maxValue = 30_000;
+g_gauge.maxValue = 40_000;
 
 // cu cat creste rezistenta, cu atat e mai mare concentratie de NO2
 var g_textRenderer = new TextRenderer(document.getElementById("g_preview-textfield"));
@@ -289,14 +289,14 @@ var g2_opts = {
         fractionDigits: 0
     },
     staticZones: [
-        { strokeStyle: "#18F749", min: 600, max: 800 },
+        { strokeStyle: "#18F749", min: 600, max: 700 },
         { strokeStyle: "#23F718", min: 500, max: 600 },
-        { strokeStyle: "#60F718", min: 350, max: 500 },
+        { strokeStyle: "#60F718", min: 300, max: 500 },
 
-        { strokeStyle: "#B8F718", min: 300, max: 350 },
+        { strokeStyle: "#B8F718", min: 200, max: 300 },
 
-        { strokeStyle: "#E1EE19", min: 200, max: 300 },
-        { strokeStyle: "#F75818", min: 100, max: 200 },
+        { strokeStyle: "#E1EE19", min: 180, max: 200 },
+        { strokeStyle: "#F75818", min: 100, max: 180 },
         { strokeStyle: "#FC0800", min: 000, max: 100 },
     ],
 };
@@ -304,7 +304,7 @@ var g2_opts = {
 var g2_target = document.getElementById('g2_gauge');
 var g2_gauge = new Gauge(g2_target).setOptions(g2_opts);
 g2_gauge.setMinValue(0);
-g2_gauge.maxValue = 800;
+g2_gauge.maxValue = 700;
 
 // cu cat creste rezistenta, cu atat e mai mica concentratia
 var g2_textRenderer = new TextRenderer(document.getElementById("g2_preview-textfield"));
@@ -341,11 +341,11 @@ var g3_opts = {
         fractionDigits: 0
     },
     staticZones: [
-        { strokeStyle: "#18F749", min: 110, max: 120 },
-        { strokeStyle: "#23F718", min: 100, max: 110 },
-        { strokeStyle: "#60F718", min: 85, max: 100 },
+        { strokeStyle: "#18F749", min: 140, max: 150 },
+        { strokeStyle: "#23F718", min: 120, max: 140 },
+        { strokeStyle: "#60F718", min: 95, max: 120 },
 
-        { strokeStyle: "#B8F718", min: 75, max: 85 },
+        { strokeStyle: "#B8F718", min: 75, max: 95 },
 
         { strokeStyle: "#E1EE19", min: 65, max: 75 },
         { strokeStyle: "#F75818", min: 50, max: 65 },
@@ -356,7 +356,7 @@ var g3_opts = {
 var g3_target = document.getElementById('g3_gauge');
 var g3_gauge = new Gauge(g3_target).setOptions(g3_opts);
 g3_gauge.setMinValue(40);
-g3_gauge.maxValue = 120;
+g3_gauge.maxValue = 150;
 
 // cu cat creste rezistenta, cu atat e mai mica concentratia
 var g3_textRenderer = new TextRenderer(document.getElementById("g3_preview-textfield"));
@@ -471,10 +471,10 @@ getLastLight();
 
 /* Actualizare periodica */ 
 function getLastValues(){
-    console.
     getLastWeather();
     getLastNoise();
     getLastGas();
     getLastLight();
 }
-// setInterval(getLastValues, 5000);
+
+setInterval(getLastValues, 3000);

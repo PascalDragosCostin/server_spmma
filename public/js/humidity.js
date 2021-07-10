@@ -49,7 +49,7 @@ function create_chart(xlabels, ytemps, period) {
                   
                     ticks: {
                         suggestedMin: 25,
-                        suggestedMax: 35,
+                        suggestedMax: 65,
                         fontColor: '#e4ffff',
                         callback: function(value, index, values) {
                             return value.toFixed(2) + "%";

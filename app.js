@@ -99,36 +99,36 @@ var mailOptions = {
 
 
 /* Autorizarea accesului pe server cu parola sau cu valoare din session */
-// app.use(function (req, res, next) {
-//     console.log(req.path);
+app.use(function (req, res, next) {
+    console.log(req.path);
 
-//     // Verifica daca e cerere de la RPI cu parola
-//     let pas = req.headers['pass'];
-//     if (pas == restPassword) {     // undefined == "..." => false
-//         next();
-//     }
-//     // Verifica daca e cerere din browser de la o sesiune autentificata
-//     else {
-//         res.locals.session = req.session;
-//         if (!req.session.isAuthorized) {
-//             if (req.path == "/verify-code") {
-//                 if (req.body.code == authorizationCode) {
-//                     req.session.isAuthorized = true;
-//                     res.redirect("/")
-//                 }
-//                 else {
-//                     res.render("authorize", { page_name: 'authorize' })
-//                 }
-//             }
-//             else {
-//                 res.render("authorize", { page_name: 'authorize' })
-//             }
-//         }
-//         else {
-//             next();
-//         }
-//     }
-// });
+    // Verifica daca e cerere de la RPI cu parola
+    let pas = req.headers['pass'];
+    if (pas == restPassword) {     // undefined == "..." => false
+        next();
+    }
+    // Verifica daca e cerere din browser de la o sesiune autentificata
+    else {
+        res.locals.session = req.session;
+        if (!req.session.isAuthorized) {
+            if (req.path == "/verify-code") {
+                if (req.body.code == authorizationCode) {
+                    req.session.isAuthorized = true;
+                    res.redirect("/")
+                }
+                else {
+                    res.render("authorize", { pageName: 'authorize' })
+                }
+            }
+            else {
+                res.render("authorize", { pageName: 'authorize' })
+            }
+        }
+        else {
+            next();
+        }
+    }
+});
 
 
 /* rutele pentru rest, site-ul web si accesul asincron la baza de date*/

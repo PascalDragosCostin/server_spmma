@@ -78,8 +78,8 @@ function create_chart(xlabels, oxs, reds, nh3s, period) {
             scales: {
                 yAxes: [{
                     ticks: {
-                        suggestedMin: -0.5,
-                        suggestedMax: 0.5,
+                        suggestedMin: -40,
+                        suggestedMax: 40,
                         fontColor: '#e4ffff',
                         callback: function (value, index, values) {
                             if (value > 0) {
@@ -155,7 +155,7 @@ function get_data(index) {
                 nh3s.push(element.nh3);
             });
 
-            create_chart(xlabels, scale_array(oxs), scale_array(reds), scale_array(nh3s), period);
+            create_chart(xlabels, percent_array(oxs), percent_array(reds), percent_array(nh3s), period);
         }
     };
 
@@ -174,6 +174,14 @@ function scale_array(arr) {
 
     arr = arr.map(x => (x - avg) / (max - min));
 
+    return arr;
+}
+
+function percent_array(arr)
+{
+    let average = (array) => array.reduce((a, b) => a + b, 0) / array.length;
+    let avg = average(arr);
+    arr = arr.map(x => Math.round((x - avg) / avg * 100),0);
     return arr;
 }
 

@@ -24,7 +24,7 @@ module.exports = function (app, db, databaseLogger) {
                 case "Day":
                     conditon = `time >= "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${date.getUTCDate().pad(2)}"
                                 AND time < "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${(date.getUTCDate() + 1).pad(2)}"`;
-                    sql = `SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                    sql = `SELECT time, avg(tmp36) as temperature, strftime('%H', time) as val
                                 FROM Weather
                                 WHERE ${conditon} AND val NOT NULL
                                 GROUP BY val
@@ -91,7 +91,7 @@ module.exports = function (app, db, databaseLogger) {
                 case "Day":
                     conditon = `time >= "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${date.getUTCDate().pad(2)}"
                                 AND time < "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${(date.getUTCDate() + 1).pad(2)}"`;
-                    sql = `SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                    sql = `SELECT time, avg(humidity) as humidity, strftime('%H', time) as val
                                 FROM Weather
                                 WHERE ${conditon} AND val NOT NULL
                                 GROUP BY val
@@ -155,7 +155,7 @@ module.exports = function (app, db, databaseLogger) {
                 case "Day":
                     conditon = `time >= "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${date.getUTCDate().pad(2)}"
                                 AND time < "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${(date.getUTCDate() + 1).pad(2)}"`;
-                    sql = `SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                    sql = `SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H', time) as val
                                 FROM Gas
                                 WHERE ${conditon} AND val NOT NULL
                                 GROUP BY val
@@ -220,7 +220,7 @@ module.exports = function (app, db, databaseLogger) {
                 case "Day":
                     conditon = `time >= "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${date.getUTCDate().pad(2)}"
                                 AND time < "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${(date.getUTCDate() + 1).pad(2)}"`;
-                    sql = `SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                    sql = `SELECT time, avg(light) as light, strftime('%H', time) as val
                                 FROM Light
                                 WHERE ${conditon} AND val NOT NULL
                                 GROUP BY val
@@ -231,7 +231,7 @@ module.exports = function (app, db, databaseLogger) {
                                 AND time < "${date.getFullYear()}-${(date.getMonth() + 2).pad(2)}"`;
                     sql = `SELECT time, avg(light) as light, strftime('%d', time) as valDay 
                                 FROM Light
-                                WHERE ${conditon} AND valDay NOT NULL
+                                WHERE ${conditon} AND valDay NOT NULL AND light > 20
                                 GROUP BY valDay
                                 ORDER BY time;`;
                     break;
@@ -240,7 +240,7 @@ module.exports = function (app, db, databaseLogger) {
                                 AND time < "${date.getFullYear() + 1}"`;
                     sql = `SELECT time, avg(light) as light, strftime('%m', time) as val
                                 FROM Light 
-                                WHERE ${conditon} AND val NOT NULL
+                                WHERE ${conditon} AND val NOT NULL AND light > 20
                                 GROUP BY val
                                 ORDER BY time;`;
                     break;
@@ -248,7 +248,7 @@ module.exports = function (app, db, databaseLogger) {
                     conditon = 'True';
                     sql = `SELECT time, avg(light) as light, strftime('%Y%m', time) as val
                             FROM Light 
-                            WHERE ${conditon} AND val NOT NULL
+                            WHERE ${conditon} AND val NOT NULL AND light > 20
                             GROUP BY val
                             ORDER BY time;`;
                     break;
@@ -285,7 +285,7 @@ module.exports = function (app, db, databaseLogger) {
                 case "Day":
                     conditon = `time >= "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${date.getUTCDate().pad(2)}"
                                 AND time < "${date.getFullYear()}-${(date.getMonth() + 1).pad(2)}-${(date.getUTCDate() + 1).pad(2)}"`;
-                    sql = `SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                    sql = `SELECT time, avg(db) as db, strftime('%H', time) as val
                                 FROM Sound
                                 WHERE ${conditon} AND val NOT NULL
                                 GROUP BY val

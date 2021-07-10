@@ -1,0 +1,780 @@
+2021-07-06 14:10:21.764 INFO  Connected to database. 
+2021-07-06 14:38:04.899 INFO  Connected to database. 
+2021-07-06 14:38:17.237 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:38:17.246 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:38:17.250 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:38:17.262 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:38:51.565 INFO  Connected to database. 
+2021-07-06 14:38:52.344 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:38:52.355 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:38:52.364 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:38:52.368 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:42:21.174 INFO  Connected to database. 
+2021-07-06 14:43:17.627 INFO  Connected to database. 
+2021-07-06 14:46:10.493 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:46:10.502 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:46:10.509 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:46:10.517 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:46:46.618 INFO  Connected to database. 
+2021-07-06 14:46:48.526 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:46:48.536 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:46:48.551 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:46:48.552 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:47:07.058 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:47:09.833 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:47:11.200 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 14:47:12.468 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:54:24.290 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 14:54:25.335 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:54:26.379 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:54:45.347 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:54:45.357 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:54:45.359 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:54:45.360 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 14:55:26.875 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:28.226 INFO  SELECT time, avg(tmp36) as temperature, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-07" 
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 14:55:29.277 INFO  SELECT time, avg(tmp36) as temperature, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021" 
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:31.406 INFO  SELECT time, avg(tmp36) as temperature, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:34.009 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:34.917 INFO  SELECT time, avg(humidity) as humidity, strftime('%d', time) as valDay 
+                                FROM Weather
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 14:55:35.794 INFO  SELECT time, avg(humidity) as humidity, strftime('%m', time) as val
+                                FROM Weather 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:36.844 INFO  SELECT time, avg(humidity) as humidity, strftime('%Y%m', time) as val
+                                FROM Weather 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:38.203 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:39.102 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 14:55:40.084 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:41.228 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:42.518 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:43.461 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 14:55:44.379 INFO  SELECT time, avg(light) as light, strftime('%m', time) as val
+                                FROM Light 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:45.527 INFO  SELECT time, avg(light) as light, strftime('%Y%m', time) as val
+                            FROM Light 
+                            WHERE True AND val NOT NULL
+                            GROUP BY val
+                            ORDER BY time; 
+2021-07-06 14:55:47.808 INFO  SELECT time, avg(db) as db, strftime('%H%M', time) as val
+                                FROM Sound
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:48.841 INFO  SELECT time, avg(db) as db, strftime('%d', time) as valDay 
+                                FROM Sound
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 14:55:49.793 INFO  SELECT time, avg(db) as db, strftime('%m', time) as val
+                                FROM Sound 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 14:55:51.210 INFO  SELECT time, avg(db) as db, strftime('%Y%m', time) as val
+                                FROM Sound 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:46:31.535 INFO  Connected to database. 
+2021-07-06 15:46:33.118 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 15:46:33.127 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 15:46:33.141 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 15:46:33.188 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 15:46:36.656 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:46:39.440 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 15:46:41.090 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:46:43.560 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:46:47.183 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:46:49.419 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 15:46:50.597 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:48:53.242 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:48:54.777 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 15:49:26.522 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:49:28.451 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 15:49:33.528 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:49:34.965 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 15:49:37.135 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:49:39.335 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:49:40.681 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 15:49:41.893 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:49:43.322 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:49:45.943 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 15:49:48.746 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:49:51.650 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:49:53.180 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 15:49:59.589 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:50:04.625 INFO  SELECT time, avg(humidity) as humidity, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:50:06.042 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:50:07.466 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 15:50:11.190 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:50:12.670 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:50:14.974 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 15:50:14.975 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 15:50:15.051 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 15:50:15.053 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 15:50:16.232 INFO  SELECT time, avg(tmp36) as temperature, strftime('%H%M', time) as val
+                                FROM Weather
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:50:18.992 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:52:09.459 INFO  Connected to database. 
+2021-07-06 15:57:08.240 INFO  Connected to database. 
+2021-07-06 15:57:09.903 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:57:37.006 INFO  Connected to database. 
+2021-07-06 15:57:48.862 INFO  Connected to database. 
+2021-07-06 15:57:49.534 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:58:08.925 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:58:10.487 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 15:58:19.451 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:01:27.427 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:01:30.924 INFO  SELECT time, avg(light) as light, strftime('%d', time) as valDay 
+                                FROM Light
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:01:38.474 INFO  SELECT time, avg(light) as light, strftime('%H%M', time) as val
+                                FROM Light
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:01:51.843 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:02:14.420 INFO  Connected to database. 
+2021-07-06 16:02:16.897 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:03:08.698 INFO  Connected to database. 
+2021-07-06 16:03:14.760 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:03:49.905 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:03:52.311 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:03:57.446 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:03:58.747 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:04:44.736 INFO  Connected to database. 
+2021-07-06 16:04:48.446 INFO  Connected to database. 
+2021-07-06 16:04:49.226 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:04:58.493 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:04:59.725 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:05:01.223 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:05:54.150 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:05:55.670 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:05:56.781 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:08:47.082 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:08:49.789 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:08:51.997 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:08:54.230 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:08:55.895 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:08:57.712 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:08:59.212 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:09:32.387 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:09:36.185 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:09:38.962 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:10:33.262 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:10:34.594 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:10:35.926 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:10:37.498 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:10:39.963 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:10:50.530 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:10:52.809 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%d', time) as valDay 
+                                FROM Gas
+                                WHERE time >= "2021-07"
+                                AND time < "2021-08" AND valDay NOT NULL
+                                GROUP BY valDay
+                                ORDER BY time; 
+2021-07-06 16:11:14.419 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%m', time) as val
+                                FROM Gas 
+                                WHERE time >= "2021"
+                                AND time < "2022" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:11:15.974 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:11:18.009 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:11:19.084 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%Y%m', time) as val
+                                FROM Gas 
+                                WHERE True AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:11:45.520 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 16:11:45.522 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 16:11:45.529 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 16:11:45.548 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 16:11:54.483 INFO  SELECT time, max(ox) as ox, max(nh3) as nh3, max(red) as red, strftime('%H%M', time) as val
+                                FROM Gas
+                                WHERE time >= "2021-07-06"
+                                AND time < "2021-07-07" AND val NOT NULL
+                                GROUP BY val
+                                ORDER BY time; 
+2021-07-06 16:12:25.226 INFO  SELECT tmp36 as temperature, humidity
+                                FROM Weather
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 16:12:25.240 INFO  SELECT db as noise
+                                FROM Sound
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 16:12:25.241 INFO  SELECT ox, red, nh3
+                                FROM Gas
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
+2021-07-06 16:12:25.244 INFO  SELECT light
+                                FROM Light
+                                WHERE time <= "2021-07-07"
+                                ORDER BY time
+                                DESC LIMIT 1; 
